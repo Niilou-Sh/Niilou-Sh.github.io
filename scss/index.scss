@@ -1,25 +1,29 @@
 @charset "UTF-8";
-@use "sass:map";
 @import "variables";
-@mixin acer-transition($value) {
-  transition: $value;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin transition-default($prop: all, $dur: $transition-fast) {
+  transition: $prop $dur;
+}
+
+@mixin hover-underline-effect {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), left 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: translateX(-50%);
 }
 
 /* CSS Custom Properties & Preprocessor Variables Mapping */
-:root {
-  --acer-green: #83b81a;
-  --acer-green-btn: #7ab800;
-  --acer-green-hover: #6ea700;
-  --acer-dark: #191919;
-  --acer-brands-bg: #333333;
-  --acer-bg-gray: #f5f5f7;
-  --acer-hover-gray: #e9ecef;
-  --win11-blue: #0078d4;
-  --transition-fast: 0.25s ease-in-out;
-  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  --underline-curve: cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -79,7 +83,7 @@ body {
   border-radius: 20px;
   font-size: 0.82rem;
   font-weight: 500;
-  @include acer-transition(all $transition-fast);
+  @include transition-default;
 }
 
 .btn-acer-light:hover,
@@ -90,18 +94,13 @@ body {
 
 .region-close-btn {
   opacity: 0.85;
-
-  &:hover {
-    opacity: 1;
-  }
 }
 
-// Standard class extension (no Sass placeholder selector).
-.acer-region-close-extension {
-  @extend .region-close-btn;
+.region-close-btn:hover {
+  opacity: 1;
 }
 
-/* 2. ACER BRANDS BAR*/
+/*2. ACER BRANDS BAR*/
 .acer-brands-bar {
   position: relative;
   z-index: 1060;
@@ -227,7 +226,7 @@ body {
   padding: 0.25em 0.45em;
 }
 
-/*  3. MAIN NAVBAR & MEGA MENU */
+/*3. MAIN NAVBAR & MEGA MENU */
 .acer-main-header {
   position: sticky;
   top: 0;
@@ -445,7 +444,7 @@ body {
   background-color: $acer-green-btn;
   color: #000000;
   border: 1px solid $acer-green-btn;
-  transition: all $transition-fast;
+  @include transition-default;
 }
 
 .btn-hero-pill-green:hover {
@@ -459,7 +458,7 @@ body {
   background-color: #ffffff;
   color: #1d1d1f;
   border: 1px solid #ffffff;
-  transition: all $transition-fast;
+  @include transition-default;
 }
 
 .btn-hero-pill-white:hover,
@@ -595,9 +594,7 @@ body {
 .category-img-container {
   height: 155px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center;
 }
 
 .category-img {
@@ -870,8 +867,7 @@ body {
   transform: translateX(4px);
 }
 
-.insight-prev-btn,
-.insight-next-btn {
+.insight-prev-btn {
   width: 48px;
   height: 48px;
   top: 50%;
@@ -884,13 +880,12 @@ body {
     opacity 0.2s ease,
     background-color 0.2s ease,
     transform 0.2s ease;
-}
-
-.insight-prev-btn {
   left: 0;
 }
 
 .insight-next-btn {
+  @extend .insight-prev-btn;
+  left: auto;
   right: 0;
 }
 
@@ -907,7 +902,7 @@ body {
   height: 1.25rem;
 }
 
-/* 8. DISCOVER MORE WITH ACER*/
+/* 8. DISCOVER MORE WITH ACER */
 .discover-section {
   position: relative;
   background-color: #ffffff;
@@ -1007,9 +1002,7 @@ body {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center;
 }
 
 .bg-acer-subtle {
@@ -1032,7 +1025,7 @@ body {
   background: linear-gradient(135deg, #2e4a0f 0%, #4c7c13 100%);
 }
 
-/*10. BACK TO TOP & SITEMAP FOOTER */
+/* 10. BACK TO TOP & SITEMAP FOOTER */
 .acer-back-to-top-bar {
   background-color: #f7f7f7;
   border-color: #e5e5e5 !important;
@@ -1165,7 +1158,7 @@ body {
   margin: -3rem auto 3rem auto;
 }
 
-/*11. SEARCH PANEL */
+/* 11. SEARCH PANEL */
 .acer-search-box {
   flex: 0 0 auto;
 }
@@ -1222,7 +1215,7 @@ body {
   min-width: 100px;
 }
 
-/*12. OFFCANVAS STYLING (Header & Footer Offcanvas) */
+/*  12. OFFCANVAS STYLING (Header & Footer Offcanvas) */
 .offcanvas-header {
   border-bottom: 1px solid #e5e5e5;
   padding: 1rem 1.25rem;
@@ -1256,7 +1249,7 @@ body {
   border-top-right-radius: 16px;
 }
 
-/* 13. RESPONSIVE BREAKPOINTS (Bootstrap 5.3 Aligned: xs, sm, md, lg, xl, xxl) */
+/*13. RESPONSIVE BREAKPOINTS (Bootstrap 5.3 Aligned: xs, sm, md, lg, xl, xxl) */
 
 /* --- Extra Extra Large Displays (xxl: >= 1400px) --- */
 @media (min-width: 1400px) {
@@ -1429,7 +1422,10 @@ body {
   }
 }
 
-/* Hamburger menu: full viewport width for xs through lg; retain the existing desktop navigation at xl and larger. */
+/* Responsive corrections for the existing Acer page. Load after CSS/Index.CSS. */
+
+/* Hamburger menu: full viewport width for xs through lg; retain the existing
+   desktop navigation at xl and larger. */
 @media (max-width: 1199.98px) {
   .acer-mobile-menu {
     --bs-offcanvas-width: 100vw;
@@ -1612,7 +1608,9 @@ body {
   }
 }
 
-/*  Browse Popular Categories - Tight Gaps & Horizontal Scroll */
+/* ===================================================
+   Browse Popular Categories - Tight Gaps & Horizontal Scroll
+   =================================================== */
 .categories-scroll-row {
   overflow-x: visible;
 }
@@ -1636,6 +1634,7 @@ body {
   }
 }
 
+/* موبایل‌های باریک (xs) */
 @media (max-width: 575.98px) {
   .categories-scroll-row > .col {
     flex: 0 0 72% !important;
@@ -1643,6 +1642,7 @@ body {
   }
 }
 
+/* موبایل‌های عریض‌تر و تبلت‌های کوچک (sm) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .categories-scroll-row > .col {
     flex: 0 0 46% !important;
@@ -1650,13 +1650,18 @@ body {
   }
 }
 
+/* بازگشت به حالت عادی در دسکتاپ */
 @media (min-width: 992px) {
   .categories-scroll-row {
     flex-wrap: wrap;
   }
 }
 
-/* Insights and Innovations - Responsive & Custom Progress Bar */
+/* ========================================================
+   Insights and Innovations - Responsive & Custom Progress Bar
+   ======================================================== */
+
+/* استایل لینک Read More با خط زیرین آرام و روان (انیمیشنی یکدست) */
 .insight-read-more {
   text-decoration: none !important;
   color: #83b817; /* رنگ سبز ایسر */
@@ -1667,6 +1672,7 @@ body {
   transition: color 0.3s ease;
 }
 
+/* ساخت تک‌خط زیرین به صورت مخفی در حالت عادی */
 .insight-read-more::after {
   content: "";
   position: absolute;
@@ -1674,10 +1680,11 @@ body {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #83b817;
-  transition: width 0.3s ease-in-out;
+  background-color: #83b817; /* همرنگ متن */
+  transition: width 0.3s ease-in-out; /* ایجاد خط به آرامی و روان */
 }
 
+/* هاور: باز شدن آرام و ملایم خط به اندازه ۱۰۰٪ عرض کلمه در دسکتاپ و تمام اندازه‌ها */
 .insight-read-more:hover::after {
   width: 100%;
 }
@@ -1687,27 +1694,32 @@ body {
   color: #83b817;
 }
 
-/*  تنظیمات موبایل و نیم‌صفحه (زیر lg / 992px) */
+/* --------------------------------------------------------
+   تنظیمات موبایل و نیم‌صفحه (زیر lg / 992px)
+   -------------------------------------------------------- */
 @media (max-width: 991.98px) {
+  /* حذف کامل فلش‌های عقب و جلو در موبایل */
   #insightsCarouselMobile .carousel-control-prev,
   #insightsCarouselMobile .carousel-control-next {
     display: none !important;
   }
 
+  /* کانتینر نوار خطی ایندیکاتور - افزایش طول و عرض خط */
   #insightsCarouselMobile .insight-progress-indicators {
     position: relative;
     margin: 1.75rem auto 0 auto;
-    width: 95%;
-    max-width: 820px;
-    height: 4px;
+    width: 95%; /* عرض به ۹۵ درصد برای بلندتر شدن نوار */
+    max-width: 820px; /* سقف حداکثر طول خط افزایش یافت */
+    height: 4px; /* ضخامت نوار */
     display: flex;
     padding: 0;
-    gap: 0;
-    background-color: #e5e7eb;
+    gap: 0; /* بدون فاصله و کاملاً یکپارچه */
+    background-color: #e5e7eb; /* رنگ خاکستری ملایم مسیر خط */
     border-radius: 4px;
     overflow: hidden;
   }
 
+  /* هر یک از ۵ بخش نوار */
   #insightsCarouselMobile .insight-progress-indicators [data-bs-target] {
     flex: 1 1 0;
     height: 100%;
@@ -1715,16 +1727,18 @@ body {
     padding: 0;
     border: none;
     border-radius: 0;
-    background-color: transparent;
+    background-color: transparent; /* بخش‌های غیرفعال */
     opacity: 1;
     cursor: pointer;
     transition: background-color 0.35s ease;
   }
 
+  /* بخش فعال (اسلاید جاری): مشکی و پررنگ */
   #insightsCarouselMobile .insight-progress-indicators [data-bs-target].active {
     background-color: #000000;
   }
 
+  /* تنظیم فاصله مناسب پایین اسلایدها */
   #insightsCarouselMobile .carousel-inner {
     padding-bottom: 0.5rem;
   }
@@ -1755,7 +1769,7 @@ body {
 
 .acer-mobile-offcanvas .nav-link:hover,
 .acer-mobile-offcanvas .nav-link:focus {
-  color: #83b81a !important;
+  color: #83b81a !important; /* Acer Green */
 }
 
 /* Brands Highlight Grid within Mobile/Tablet Menu */
@@ -1770,7 +1784,10 @@ body {
   transform: translateY(-2px);
 }
 
-/* Acer mobile navigation and drill-down Bootstrap 5.3 compatible; mobile offcanvas stays half-width on md. */
+/* ============================================================
+   Acer mobile navigation and drill-down
+   Bootstrap 5.3 compatible; mobile offcanvas stays half-width on md.
+   ============================================================ */
 
 /* Hamburger toggle */
 .acer-navbar-toggler {
@@ -1826,7 +1843,7 @@ body {
   }
 }
 
-/* Offcanvas dimensions:full mobile width, half viewport on tablet/md */
+/* Offcanvas dimensions: full mobile width, half viewport on tablet/md */
 .acer-mobile-offcanvas {
   --bs-offcanvas-width: 100vw;
   width: 100vw !important;
@@ -1979,7 +1996,7 @@ body {
   justify-content: flex-start;
 }
 
-/*Back bar:arrow followed by current page name;no redundant right-side title */
+/* Back bar: arrow followed by current page name; no redundant right-side title */
 .acer-mobile-subhead {
   display: flex;
   align-items: center;
@@ -2159,7 +2176,7 @@ body {
 /* Acer responsive navigation / brands / mega-menu overrides
    Load after CSS/Index.CSS and mobile-nav-drilldown.css. */
 
-/*Hamburger morphs into a close (X) while Bootstrap offcanvas is open.*/
+/* Hamburger morphs into a close (X) while Bootstrap offcanvas is open. */
 .acer-navbar-toggler {
   position: relative;
   width: 44px;
@@ -2425,6 +2442,7 @@ body {
     color: #1a1a1a !important;
   }
 
+  /* نوار بالای صفحه برندها */
   .acer-mobile-page[data-mobile-page="brands"] .acer-mobile-page-header,
   .acer-mobile-page[data-mobile-page="brands"] .acer-mobile-page-header button {
     background-color: #ffffff !important;
@@ -2432,6 +2450,7 @@ body {
     border-bottom: 1px solid #f0f0f0;
   }
 
+  /* چیدمان کنار هم به صورت گرید به جای ستونی (مشابه عکس دوم) */
   .acer-mobile-page[data-mobile-page="brands"] .acer-mobile-links {
     display: grid !important;
     grid-template-columns: repeat(4, 1fr) !important;
@@ -2439,12 +2458,14 @@ body {
     padding: 24px 20px !important;
   }
 
+  /* در موبایل‌های با عرض کم (XS) برای خوانایی بهتر، ۲ ستونه */
   @media (max-width: 575.98px) {
     .acer-mobile-page[data-mobile-page="brands"] .acer-mobile-links {
       grid-template-columns: repeat(2, 1fr) !important;
     }
   }
 
+  /* استایل هر گزینه: پس‌زمینه سفید و هاور طوسی کم‌رنگ */
   .acer-mobile-page[data-mobile-page="brands"] .acer-mobile-links a {
     display: flex !important;
     align-items: center;
@@ -2456,13 +2477,11 @@ body {
     border-radius: 6px !important;
     text-decoration: none !important;
     border: none !important;
-    transition:
-      background-color 0.2s ease,
-      color 0.2s ease !important;
+    transition: background-color 0.2s ease, color 0.2s ease !important;
   }
 
   .acer-mobile-page[data-mobile-page="brands"] .acer-mobile-links a:hover {
-    background-color: #f1f2f4 !important;
+    background-color: #f1f2f4 !important; /* هاور طوسی کم‌رنگ */
     color: #000000 !important;
   }
 }
@@ -2495,118 +2514,206 @@ body {
   }
 }
 
-.acer-navbar-toggler {
-  position: relative;
-  width: 44px;
-  height: 44px;
-}
+.acer-navbar-toggler { position: relative; width: 44px; height: 44px; }
 .acer-navbar-toggler .bar {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background-color: #222;
-  border-radius: 2px;
-  transition:
-    transform 0.25s ease,
-    opacity 0.2s ease;
+  display: block; width: 24px; height: 2px; background-color: #222;
+  border-radius: 2px; transition: transform .25s ease, opacity .2s ease;
   transform-origin: center;
 }
 .acer-navbar-toggler[aria-expanded="true"] .bar:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
-.acer-navbar-toggler[aria-expanded="true"] .bar:nth-child(2) {
-  opacity: 0;
-}
+.acer-navbar-toggler[aria-expanded="true"] .bar:nth-child(2) { opacity: 0; }
 .acer-navbar-toggler[aria-expanded="true"] .bar:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
 
 /* Explicitly render the in-menu close control as a visible X. */
 .acer-mobile-close {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  flex: 0 0 40px;
-  border: 0;
-  border-radius: 50%;
-  background: transparent;
-  cursor: pointer;
+  position: relative; width: 40px; height: 40px; flex: 0 0 40px;
+  border: 0; border-radius: 50%; background: transparent; cursor: pointer;
 }
-.acer-mobile-close:hover,
-.acer-mobile-close:focus-visible {
-  background: #f1f1f1;
+.acer-mobile-close {
+  &:hover, &:focus-visible { background: #f1f1f1; }
 }
 .acer-mobile-close span {
-  position: absolute;
-  left: 10px;
-  top: 19px;
-  width: 20px;
-  height: 2px;
-  border-radius: 2px;
-  background: #222;
-  transform-origin: center;
+  position: absolute; left: 10px; top: 19px; width: 20px; height: 2px;
+  border-radius: 2px; background: #222; transform-origin: center;
 }
-.acer-mobile-close span:first-child {
-  transform: rotate(45deg);
-}
-.acer-mobile-close span:last-child {
-  transform: rotate(-45deg);
-}
+.acer-mobile-close span:first-child { transform: rotate(45deg); }
+.acer-mobile-close span:last-child { transform: rotate(-45deg); }
 
 /* Acer Brands dropdown: Acer-green background, with readable brand tiles. */
 .acer-brands-area > .acer-brands-btn {
-  min-height: 40px;
-  padding: 0 14px !important;
-  background: #83b81a;
-  color: #111 !important;
-  border-radius: 0;
-  font-weight: 600;
+  min-height: 40px; padding: 0 14px !important; background: #83b81a;
+  color: #111 !important; border-radius: 0; font-weight: 600;
 }
 .acer-brands-area > .acer-brands-btn:hover,
-.acer-brands-area > .acer-brands-btn:focus {
-  background: #6ea700;
-  color: #fff !important;
-}
-.acer-brands-area > .acer-brands-btn .bi {
-  color: inherit !important;
-}
+.acer-brands-area > .acer-brands-btn:focus { background: #6ea700; color: #fff !important; }
+.acer-brands-area > .acer-brands-btn .bi { color: inherit !important; }
 .acer-brands-panel {
-  background: #83b81a;
-  border-color: #6ea700;
-  padding: 18px 22px;
+  background: #83b81a; border-color: #6ea700; padding: 18px 22px;
 }
 .acer-brands-panel .acer-brand-card {
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 6px;
+  background: #fff; border: 1px solid rgba(0,0,0,.08); border-radius: 6px;
 }
 
 /* Mega-menu promo images: side-by-side on tablet/desktop, stacked on phones. */
 .mega-promo-col {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-content: start;
-  gap: 1rem;
-  min-width: 0;
+  display: grid; grid-template-columns: 1fr; align-content: start;
+  gap: 1rem; min-width: 0;
 }
-.mega-promo-col .mega-promo-card {
-  min-width: 0;
-}
-.mega-promo-col .mega-promo-img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto;
-}
+.mega-promo-col .mega-promo-card { min-width: 0; }
+.mega-promo-col .mega-promo-img { width: 100%; aspect-ratio: 16 / 9; height: auto; }
 @media (min-width: 768px) {
-  .mega-promo-col {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.75rem;
-  }
+  .mega-promo-col { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
 }
 @media (max-width: 991.98px) {
   .acer-mobile-offcanvas.offcanvas,
   .acer-mobile-offcanvas.offcanvas-start {
-    width: 100vw !important;
-    max-width: 100vw !important;
+    width: 100vw !important; max-width: 100vw !important;
+  }
+}
+
+/* Acer responsive navigation / brands / mega-menu overrides
+   Load after CSS/Index.CSS and mobile-nav-drilldown.css. */
+
+/* Hamburger morphs into a close (X) while Bootstrap offcanvas is open. */
+.acer-navbar-toggler { position: relative; width: 44px; height: 44px; }
+.acer-navbar-toggler .bar {
+  display: block; width: 24px; height: 2px; background-color: #222;
+  border-radius: 2px; transition: transform .25s ease, opacity .2s ease;
+  transform-origin: center;
+}
+.acer-navbar-toggler[aria-expanded="true"] .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.acer-navbar-toggler[aria-expanded="true"] .bar:nth-child(2) { opacity: 0; }
+.acer-navbar-toggler[aria-expanded="true"] .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Explicitly render the in-menu close control as a visible X. */
+.acer-mobile-close {
+  position: relative; width: 40px; height: 40px; flex: 0 0 40px;
+  border: 0; border-radius: 50%; background: transparent; cursor: pointer;
+}
+.acer-mobile-close:hover, .acer-mobile-close:focus-visible { background: #f1f1f1; }
+.acer-mobile-close span {
+  position: absolute; left: 10px; top: 19px; width: 20px; height: 2px;
+  border-radius: 2px; background: #222; transform-origin: center;
+}
+.acer-mobile-close span:first-child { transform: rotate(45deg); }
+.acer-mobile-close span:last-child { transform: rotate(-45deg); }
+
+/* Acer Brands dropdown: Acer-green background, with readable brand tiles. */
+.acer-brands-area > .acer-brands-btn {
+  min-height: 40px; padding: 0 14px !important; background: #83b81a;
+  color: #111 !important; border-radius: 0; font-weight: 600;
+}
+.acer-brands-area > .acer-brands-btn:hover,
+.acer-brands-area > .acer-brands-btn:focus { background: #6ea700; color: #fff !important; }
+.acer-brands-area > .acer-brands-btn .bi { color: inherit !important; }
+.acer-brands-panel {
+  background: #83b81a; border-color: #6ea700; padding: 18px 22px;
+}
+.acer-brands-panel .acer-brand-card {
+  background: #fff; border: 1px solid rgba(0,0,0,.08); border-radius: 6px;
+}
+
+/* Mega-menu promo images: side-by-side on tablet/desktop, stacked on phones. */
+.mega-promo-col {
+  display: grid; grid-template-columns: 1fr; align-content: start;
+  gap: 1rem; min-width: 0;
+}
+.mega-promo-col .mega-promo-card { min-width: 0; }
+.mega-promo-col .mega-promo-img { width: 100%; aspect-ratio: 16 / 9; height: auto; }
+@media (min-width: 768px) {
+  .mega-promo-col { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+}
+@media (max-width: 991.98px) {
+  .acer-mobile-offcanvas.offcanvas,
+  .acer-mobile-offcanvas.offcanvas-start {
+    width: 100vw !important; max-width: 100vw !important;
+  }
+}
+
+/* Pure CSS drill-down controls for #mobileMenu (radio/label state) */
+#mobileMenu .acer-mobile-page-state {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+#mobileMenu .acer-mobile-page-state:focus-visible + .acer-mobile-page {
+  outline: 2px solid #83b81a;
+}
+#mobileMenu .acer-mobile-page { display: none; }
+#mobileMenu #mobile-page-main:checked ~ [data-mobile-page="main"],
+#mobileMenu #mobile-page-products:checked ~ [data-mobile-page="products"],
+#mobileMenu #mobile-page-laptops:checked ~ [data-mobile-page="laptops"],
+#mobileMenu #mobile-page-desktops:checked ~ [data-mobile-page="desktops"],
+#mobileMenu #mobile-page-chromebooks:checked ~ [data-mobile-page="chromebooks"],
+#mobileMenu #mobile-page-tablets:checked ~ [data-mobile-page="tablets"],
+#mobileMenu #mobile-page-monitors:checked ~ [data-mobile-page="monitors"],
+#mobileMenu #mobile-page-projectors:checked ~ [data-mobile-page="projectors"],
+#mobileMenu #mobile-page-electronics-accessories:checked ~ [data-mobile-page="electronics-accessories"],
+#mobileMenu #mobile-page-networking:checked ~ [data-mobile-page="networking"],
+#mobileMenu #mobile-page-emobility:checked ~ [data-mobile-page="emobility"],
+#mobileMenu #mobile-page-handheld-gaming:checked ~ [data-mobile-page="handheld-gaming"],
+#mobileMenu #mobile-page-brands:checked ~ [data-mobile-page="brands"],
+#mobileMenu #mobile-page-account:checked ~ [data-mobile-page="account"] { display: block; }
+#mobileMenu .acer-mobile-links label,
+#mobileMenu .acer-mobile-subhead label { cursor: pointer; }
+
+/* یکسان‌سازی منوی اصلی و زیرمنوها برای تمام تگ‌های لینک، دکمه و لیبل */
+.acer-mobile-links a,
+.acer-mobile-links button,
+.acer-mobile-links label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  padding: 15px 20px;
+  color: #111;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-decoration: none;
+  border-bottom: 1px solid #ececec;
+  cursor: pointer;
+}
+
+/* هدر برگشت زیرمنوها (مانند Products) */
+.acer-mobile-subhead label,
+.acer-mobile-subhead button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 4px 0;
+  color: #222;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* برای موبایل‌های با عرض زیر 576px */
+@media (max-width: 575.98px) {
+  .acer-mobile-links a,
+  .acer-mobile-links button,
+  .acer-mobile-links label {
+    padding: 13px 16px;
+    font-size: 1rem;
+  }
+  
+  .acer-mobile-subhead label,
+  .acer-mobile-subhead button {
+    font-size: 1rem;
   }
 }

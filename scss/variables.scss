@@ -1,12 +1,17 @@
-// Sass variables mapped to the existing CSS custom properties.
-$acer-green: var(--acer-green);
-$acer-green-btn: var(--acer-green-btn);
-$acer-green-hover: var(--acer-green-hover);
-$acer-dark: var(--acer-dark);
-$acer-brands-bg: var(--acer-brands-bg);
-$acer-bg-gray: var(--acer-bg-gray);
-$acer-hover-gray: var(--acer-hover-gray);
-$win11-blue: var(--win11-blue);
-$transition-fast: var(--transition-fast);
-$transition-smooth: var(--transition-smooth);
-$underline-curve: var(--underline-curve);
+// SCSS Variables - Acer Project
+$acer-green: #83b81a;
+$acer-green-btn: #7ab800;
+$acer-green-hover: #6ea700;
+$acer-dark: #191919;
+$acer-brands-bg: #333333;
+$acer-bg-gray: #f5f5f7;
+$acer-hover-gray: #e9ecef;
+$win11-blue: #0078d4;
+$transition-fast: 0.25s ease-in-out;
+$transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+$underline-curve: cubic-bezier(0.25, 0.8, 0.25, 1);
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+$bp-xxl: 1400px;

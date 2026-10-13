@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Project Web2 | Acer Official Portal</title>
+    <title>Project Web2 | Acer Official Portal
+    </title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com"         rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300; 400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
     <!-- Bootstrap 5.3 & Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
@@ -18,23 +19,15 @@
   </head>
   <body class="bg-light text-dark" id="top">
     <!-- 1. REGION BANNER -->
-    <section aria-label="Region Selector" class="acer-region-banner   text-white border-bottom border-secondary border-opacity-25">
+    <section aria-label="Region Selector" class="acer-region-banner text-white border-bottom border-secondary border-opacity-25">
       <div class="container py-2">
         <div class="row align-items-center g-2">
-          <div class="col-12 col-md-auto d-flex align-items-center"><i aria-hidden="true" class="bi bi-globe2 me-2 text-secondary fs-5"></i> <span class="region-msg-text">You are browsing the Global site.   Choose your country or region:</span></div>
-          <div class="col-12 col-md-auto ms-md-auto d-flex align-items-center gap-2 flex-wrap">
-            <label class="visually-hidden" for="countrySelect">Choose Location</label>
-            <div class="region-select-wrap position-relative">
-              <select aria-label="Choose Location" class="form-select form-select-sm region-select" id="countrySelect">
-                <option selected="" value="us">United States</option>
-                <option value="ca">Canada</option>
-                <option value="uk">United Kingdom</option>
-                <option value="de">Deutschland</option>
-                <option value="global">Global (English)</option>
-              </select>
+          <div class="col-12 col-md-auto d-flex align-items-center"><i aria-hidden="true" class="bi bi-globe2 me-2 text-secondary fs-5"></i><span class="region-msg-text">You are browsing the Global site. Choose your country or region:</span>
+          </div>
+          <div class="col-12 col-md-auto ms-md-auto d-flex align-items-center gap-2 flex-wrap"><label class="visually-hidden" for="countrySelect">Choose Location</label>
+            <div class="region-select-wrap position-relative"><select aria-label="Choose Location" class="form-select form-select-sm region-select" id="countrySelect"><option selected="" value="us">United States</option><option value="ca">Canada</option><option value="uk">United Kingdom</option><option value="de">Deutschland</option><option value="global">Global (English)</option></select>
             </div>
-            <a class="btn btn-acer-light btn-sm px-3 fw-bold rounded-pill text-dark text-decoration-none" href="#">Continue</a>
-            <button aria-label="Close region selector" class="btn-close btn-close-white region-close-btn ms-1" data-bs-dismiss="alert" onclick="this.closest('section').style.display='none'" type="button"></button>
+              <a class="btn btn-acer-light btn-sm px-3 fw-bold rounded-pill text-dark text-decoration-none" href="#">Continue</a><button aria-label="Close region selector" class="btn-close btn-close-white region-close-btn ms-1" data-bs-dismiss="alert" onclick="this.closest('section').style.display='none'" type="button"></button>
           </div>
         </div>
       </div>
@@ -44,77 +37,46 @@
       <div class="container d-flex justify-content-between align-items-center position-relative acer-brands-bar-inner">
         <!-- Acer Brands Button and Bootstrap Collapse Panel -->
         <div class="acer-brands-area">
-          <button aria-controls="acerBrandsPanel" aria-expanded="false" class="btn btn-link text-white p-0 text-decoration-none d-flex align-items-center gap-2 acer-brands-btn" data-bs-target="#acerBrandsPanel" data-bs-toggle="collapse" id="acerBrandsBtn" type="button"><i aria-hidden="true" class="bi bi-grid-3x3-gap-fill text-white fs-6"></i> <span>Acer Brands</span></button>
+          <button     aria-controls="acerBrandsPanel" aria-expanded="false" class="btn btn-link text-white p-0 text-decoration-none d-flex align-items-center gap-2 acer-brands-btn" data-bs-target="#acerBrandsPanel" data-bs-toggle="collapse" id="acerBrandsBtn" type="button"><i aria-hidden="true" class="bi bi-grid-3x3-gap-fill text-white fs-6"></i><span>Acer Brands</span></button>
           <div class="collapse acer-brands-panel shadow" id="acerBrandsPanel">
             <div class="acer-brands-grid">
-              <!-- Add each logo address to the corresponding src="" --> 
-              <a class="acer-brand-card" href="https://www.acer.com/us-en/predator" rel="noopener noreferrer" target="_blank">
-                <img alt="Predator" class="acer-brand-image" src="images/logo-acer.jpg"/>
-              </a> 
-              <a class="acer-brand-card" href="https://www.acer.com/us-en/conceptd" rel="noopener noreferrer" target="_blank">
-                <img alt="ConceptD" class="acer-brand-image" src="images/logo-predator.jpg"/>
-              </a> 
-              <a class="acer-brand-card" href="https://www.planet9.gg" rel="noopener noreferrer" target="_blank">
-                <img alt="Planet9" class="acer-brand-image" src="images/logo-planet9.jpg"/>
-              </a> 
-              <a class="acer-brand-card" href="https://www.acer.com/us-en" rel="noopener noreferrer" target="_blank">
-                <img alt="Acer Store" class="acer-brand-image" src="images/logo-spatiallabs.jpg"/>
-              </a> 
-              <a class="acer-brand-card" href="https://www.acer.com/us-en" rel="noopener noreferrer" target="_blank">
-                <img alt="Acer brand" class="acer-brand-image" src="images/logo-acerpure.jpg"/>
-              </a> 
-              <a class="acer-brand-card" href="https://www.acer.com/us-en" rel="noopener noreferrer" target="_blank">
-                <img alt="Acer brand" class="acer-brand-image" src="images/logo-altos-black.jpg"/>
-              </a> 
-              <a class="acer-brand-card" href="https://www.acer.com/us-en" rel="noopener noreferrer" target="_blank">
-                <img alt="Acer brand" class="acer-brand-image" src="images/logo-aopen.jpg"/>
-              </a>
+              <!-- Add each logo address to the corresponding src="" -->
+              <a class="acer-brand-card" href="https://www.acer.com/us-en/predator" rel="noopener noreferrer" target="_blank"><img alt="Predator" class="acer-brand-image" src="Images/logo-acer.jpg"/></a><a class="acer-brand-card" href="https://www.acer.com/us-en/conceptd" rel="noopener noreferrer" target="_blank"><img alt="ConceptD" class="acer-brand-image" src="Images/logo-predator.jpg"/></a><a class="acer-brand-card" href="https://www.planet9.gg" rel="noopener noreferrer" target="_blank"><img alt="Planet9" class="acer-brand-image" src="Images/logo-planet9.jpg"/></a><a class="acer-brand-card" href="https://www.acer.com/us-en" rel="noopener noreferrer" target="_blank"><img alt="Acer Store" class="acer-brand-image" src="Images/logo-spatiallabs.jpg"/></a><a class="acer-brand-card" href="https://www.acer.com/us-en" rel="noopener noreferrer" target="_blank"><img alt="Acer brand" class="acer-brand-image" src="Images/logo-acerpure.jpg"/></a><a class="acer-brand-card" href="https://www.acer.com/us-en" rel="noopener noreferrer" target="_blank"><img alt="Acer brand" class="acer-brand-image" src="Images/logo-altos-black.jpg"/></a><a class="acer-brand-card" href="https://www.acer.com/us-en" rel="noopener noreferrer" target="_blank"><img alt="Acer brand" class="acer-brand-image" src="Images/logo-aopen.jpg"/></a>
             </div>
           </div>
         </div>
         <!-- Account and Cart -->
         <div class="d-flex align-items-center gap-3">
           <!-- Account Button and Bootstrap Collapse Panel -->
-          <div class="acer-account-area">
-            <button aria-controls="acerAccountPanel" aria-expanded="false" aria-label="Open account menu" class="btn p-0 border-0 bg-transparent text-white acer-action-link" data-bs-target="#acerAccountPanel" data-bs-toggle="collapse" id="acerAccountBtn" title="My Account" type="button"><i aria-hidden="true" class="bi bi-person fs-5"></i></button>
-            <div class="collapse acer-account-panel shadow" id="acerAccountPanel"><a class="acer-account-item" href="login.html" target="_blank">
-              <i aria-hidden="true" class="bi bi-box-arrow-in-right"></i>
-                <span>Sign In</span>
-              </a> 
-              <a class="acer-account-item" href="signup.html" target="_blank">
-              <i aria-hidden="true" class="bi bi-person-plus"></i>
-                <span>Sign Up</span>
-              </a> 
-              <a class="acer-account-item" href="acerid.html" target="_blank">
-              <i aria-hidden="true" class="bi bi-info-circle"></i>
-                <span>What's Acer ID</span>
-              </a>
+          <div class="acer-account-area"><button aria-controls="acerAccountPanel" aria-expanded="false" aria-label="Open account menu" class="btn p-0 border-0 bg-transparent text-white acer-action-link" data-bs-target="#acerAccountPanel" data-bs-toggle="collapse" id="acerAccountBtn" title="My Account" type="button"><i aria-hidden="true" class="bi bi-person fs-5"></i></button>
+            <div class="collapse acer-account-panel shadow" id="acerAccountPanel"><a class="acer-account-item" href="login.html" target="_blank"><i aria-hidden="true" class="bi bi-box-arrow-in-right"></i><span>Sign In</span></a><a class="acer-account-item" href="signup.html" target="_blank"><i aria-hidden="true" class="bi bi-person-plus"></i><span>Sign Up</span></a><a class="acer-account-item" href="acerid.html" target="_blank"><i aria-hidden="true" class="bi bi-info-circle"></i><span>What's Acer ID</span></a>
             </div>
           </div>
           <!-- Cart -->
-          <a class="text-white-50 text-decoration-none position-relative acer-action-link" href="cart.html" title="Cart"><i aria-hidden="true" class="bi bi-cart fs-5 text-white"></i> <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger acer-cart-count">2</span></a>
+          <a class="text-white-50 text-decoration-none position-relative acer-action-link" href="cart.html" title="Cart"><i aria-hidden="true" class="bi bi-cart fs-5 text-white"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger acer-cart-count">2</span></a>
         </div>
       </div>
     </div>
     <!--3. MAIN NAVBAR & FULL SEARCH PANEL -->
     <header class="sticky-top bg-white border-bottom shadow-sm acer-main-header">
       <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-0">
-        <div class="container">
-          <button aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler acer-navbar-toggler collapsed d-lg-none" data-bs-target="#mobileMenu" data-bs-toggle="offcanvas" type="button"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
-          <a class="navbar-brand acer-logo-text fw-bold me-4" href="acer.html">acer</a>
+        <div class="container"><button aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler acer-navbar-toggler collapsed d-lg-none" data-bs-target="#mobileMenu" data-bs-toggle="offcanvas" type="button"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button><a class="navbar-brand acer-logo-text fw-bold me-4" href="acer.html">acer</a>
           <div class="collapse navbar-collapse" id="acerNavbarMain">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link" href="Shop.html" target="_blank">Shop</a></li>
-              <li class="nav-item"><a class="nav-link" href="Deals.html" target="_blank">Deals</a></li>
-              <li class="nav-item"><a class="nav-link" href="ai.html">AI</a></li>
+              <li class="nav-item"><a class="nav-link" href="Shop.html" target="_blank">Shop</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="Deals.html" target="_blank">Deals</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="ai.html">AI</a>
+              </li>
               <!-- Products Mega Dropdown -->
-              <li class="nav-item dropdown mega-dropdown position-static">
-                <a class="nav-link dropdown-toggle" href="#" role="button">Products</a>
+              <li class="nav-item dropdown mega-dropdown position-static"><a class="nav-link dropdown-toggle" href="#" role="button">Products</a>
                 <div class="mega-menu-panel container-fluid border-top mt-0 shadow">
                   <div class="container px-0">
                     <div class="row g-0">
                       <div class="col-md-3 mega-col-1">
-                        <div class="nav flex-column nav-pills mega-nav-tabs" id="mega-tab" role="tablist"><button class="nav-link" data-bs-target="#tab-newproducts" data-bs-toggle="pill" type="button">New Products</button> <button class="nav-link" data-bs-target="#tab-copilot" data-bs-toggle="pill" type="button">Copilot+ PC</button> <button class="nav-link active" data-bs-target="#tab-laptops" data-bs-toggle="pill" type="button">Laptops</button> <button class="nav-link" data-bs-target="#tab-desktops" data-bs-toggle="pill" type="button">Desktops</button> <button class="nav-link" data-bs-target="#tab-chromebooks" data-bs-toggle="pill" type="button">Acer Chromebooks</button> <button class="nav-link" data-bs-target="#tab-tablets" data-bs-toggle="pill" type="button">Tablets</button> <button class="nav-link" data-bs-target="#tab-monitors" data-bs-toggle="pill" type="button">Monitors</button> <button class="nav-link" data-bs-target="#tab-projectors" data-bs-toggle="pill" type="button">Projectors</button> <button class="nav-link" data-bs-target="#tab-electronics" data-bs-toggle="pill" type="button">Electronics &amp; Accessories</button> <button class="nav-link" data-bs-target="#tab-networking" data-bs-toggle="pill" type="button">Networking</button> <button class="nav-link" data-bs-target="#tab-emobility" data-bs-toggle="pill" type="button">eMobility</button> <button class="nav-link" data-bs-target="#tab-handheld" data-bs-toggle="pill" type="button">Handheld Gaming</button></div>
+                        <div class="nav flex-column nav-pills mega-nav-tabs" id="mega-tab" role="tablist"><button class="nav-link" data-bs-target="#tab-newproducts" data-bs-toggle="pill" type="button">New Products</button><button class="nav-link" data-bs-target="#tab-copilot" data-bs-toggle="pill" type="button">Copilot+ PC</button><button class="nav-link active" data-bs-target="#tab-laptops" data-bs-toggle="pill" type="button">Laptops</button><button class="nav-link" data-bs-target="#tab-desktops" data-bs-toggle="pill" type="button">Desktops</button><button class="nav-link" data-bs-target="#tab-chromebooks" data-bs-toggle="pill" type="button">Acer Chromebooks</button><button class="nav-link" data-bs-target="#tab-tablets" data-bs-toggle="pill" type="button">Tablets</button><button class="nav-link" data-bs-target="#tab-monitors" data-bs-toggle="pill" type="button">Monitors</button><button class="nav-link" data-bs-target="#tab-projectors" data-bs-toggle="pill" type="button">Projectors</button><button class="nav-link" data-bs-target="#tab-electronics" data-bs-toggle="pill" type="button">Electronics &amp; Accessories</button><button class="nav-link" data-bs-target="#tab-networking" data-bs-toggle="pill" type="button">Networking</button><button class="nav-link" data-bs-target="#tab-emobility" data-bs-toggle="pill" type="button">eMobility</button><button class="nav-link" data-bs-target="#tab-handheld" data-bs-toggle="pill" type="button">Handheld Gaming</button>
+                        </div>
                       </div>
                       <div class="col-md-9 mega-col-2 p-4">
                         <div class="tab-content" id="mega-tabContent">
@@ -122,64 +84,42 @@
                           <div class="tab-pane fade show active" id="tab-laptops">
                             <div class="row">
                               <div class="col-md-4">
-                                <h6 class="mega-col-title">By Category</h6>
+                                <h6 class="mega-col-title">By Category
+                                </h6>
                                 <ul class="mega-list">
-                                  <li>
-                                    <a href="Copilot+ PC.html" target="_blank">Copilot+ PC</a>
+                                  <li><a href="Copilot+ PC.html" target="_blank">Copilot+ PC</a>
                                   </li>
-                                  <li>
-                                    <a href="AI PCs.html" target="_blank">AI PCs</a>
+                                  <li><a href="AI PCs.html" target="_blank">AI PCs</a>
                                   </li>
-                                  <li>
-                                    <a href="Gaming.html" target="_blank">Gaming</a>
+                                  <li><a href="Gaming.html" target="_blank">Gaming</a>
                                   </li>
-                                  <li>
-                                    <a href="Chromebooks.html" target="_blank">Chromebooks</a>
+                                  <li><a href="Chromebooks.html" target="_blank">Chromebooks</a>
                                   </li>
                                 </ul>
                               </div>
                               <div class="col-md-4">
-                                <h6 class="mega-col-title">By Series</h6>
+                                <h6 class="mega-col-title">By Series
+                                </h6>
                                 <ul class="mega-list">
-                                  <li>
-                                    <a href="Predator.html" target="_blank">Predator</a>
+                                  <li><a href="Predator.html" target="_blank">Predator</a>
                                   </li>
-                                  <li>
-                                    <a href="Acer Swift.html" target="_blank">Acer Swift</a>
+                                  <li><a href="Acer Swift.html" target="_blank">Acer Swift</a>
                                   </li>
-                                  <li>
-                                    <a href="Acer Aspire.html" target="_blank">Acer Aspire</a>
+                                  <li><a href="Acer Aspire.html" target="_blank">Acer Aspire</a>
                                   </li>
-                                  <li>
-                                    <a href="Acer Nitro.html" target="_blank">Acer Nitro</a>
+                                  <li><a href="Acer Nitro.html" target="_blank">Acer Nitro</a>
                                   </li>
-                                  <li>
-                                    <a href="Acer Vero.html" target="_blank">Acer Vero</a>
+                                  <li><a href="Acer Vero.html" target="_blank">Acer Vero</a>
                                   </li>
-                                  <li>
-                                    <a href="Acer Googlebook.html" target="_blank">Acer Googlebook</a>
+                                  <li><a href="Acer Googlebook.html" target="_blank">Acer Googlebook</a>
                                   </li>
-                                  <li>
-                                    <a href="Acer TravelMate.html" target="_blank">Acer TravelMate</a>
+                                  <li><a href="Acer TravelMate.html" target="_blank">Acer TravelMate</a>
                                   </li>
-                                  <li>
-                                    <a href="Acer Extensa.html" target="_blank">Acer Extensa</a>
+                                  <li><a href="Acer Extensa.html" target="_blank">Acer Extensa</a>
                                   </li>
                                 </ul>
                               </div>
-                              <div class="col-md-4 mega-promo-col">
-                                <a class="mega-promo-card" href="Windows.html" target="_blank">
-<<<<<<< Updated upstream:index.html
-                                  <img alt="Windows 11" class="mega-promo-img" src="images/Banner_Windows11.jpg"/>
-=======
-                                  <img alt="Windows 11" class="mega-promo-img" src="images/Banner_Windows11.jpg"/>
->>>>>>> Stashed changes:Index.html
-                                    <span class="mega-promo-title">Windows</span>
-                                </a> 
-                                <a class="mega-promo-card" href="Acer AMD Ryzen Series Laptops.html" target="_blank">
-                                  <img alt="Acer AMD Ryzen" class="mega-promo-img" src="images/AMD_entry_point.jpg"/>
-                                    <span class="mega-promo-title">Acer AMD Ryzen™ Series Laptops</span>
-                                </a>
+                              <div class="col-md-4 mega-promo-col"><a class="mega-promo-card" href="Windows.html" target="_blank"><img alt="Windows 11" class="mega-promo-img" src="Images/Banner_Windows11.jpg"/><span class="mega-promo-title">Windows</span></a><a class="mega-promo-card" href="Acer AMD Ryzen Series Laptops.html" target="_blank"><img alt="Acer AMD Ryzen" class="mega-promo-img" src="Images/AMD_entry_point.jpg"/><span class="mega-promo-title">Acer AMD Ryzen™ Series Laptops</span></a>
                               </div>
                             </div>
                           </div>
@@ -187,59 +127,44 @@
                           <div class="tab-pane fade" id="tab-desktops">
                             <div class="row">
                               <div class="col-md-4">
-                                <h6 class="mega-col-title">By Category</h6>
+                                <h6 class="mega-col-title">By Category
+                                </h6>
                                 <ul class="mega-list">
-                                  <li>
-                                    <a href="Predator.html" target="_blank">Predator</a>
+                                  <li><a href="Predator.html" target="_blank">Predator</a>
                                   </li>
-                                  <li>
-                                    <a href="Gaming.html" target="_blank">Gaming</a>
+                                  <li><a href="Gaming.html" target="_blank">Gaming</a>
                                   </li>
-                                  <li>
-                                    <a href="Business.html" target="_blank">Business</a>
+                                  <li><a href="Business.html" target="_blank">Business</a>
                                   </li>
-                                  <li>
-                                    <a href="Education.html" target="_blank">Education</a>
+                                  <li><a href="Education.html" target="_blank">Education</a>
                                   </li>
-                                  <li>
-                                    <a href="Components.html" target="_blank">Components</a>
+                                  <li><a href="Components.html" target="_blank">Components</a>
                                   </li>
                                 </ul>
                               </div>
                               <div class="col-md-4">
-                                <h6 class="mega-col-title">By Series</h6>
+                                <h6 class="mega-col-title">By Series
+                                </h6>
                                 <ul class="mega-list">
-                                  <li>
-                                    <a href="Acer Aspire All in Ones.html" target="_blank">Acer Aspire All in Ones</a>
+                                  <li><a href="Acer Aspire All in Ones.html" target="_blank">Acer Aspire All in Ones</a>
                                   </li>
-                                  <li>
-                                    <a href="Acer Aspire Classic Desktops.html" target="_blank">Acer Aspire Classic Desktops</a>
+                                  <li><a href="Acer Aspire Classic Desktops.html" target="_blank">Acer Aspire Classic Desktops</a>
                                   </li>
-                                  <li>
-                                    <a href="Acer Nitro.html" target="_blank">Acer Nitro</a>
+                                  <li><a href="Acer Nitro.html" target="_blank">Acer Nitro</a>
                                   </li>
-                                  <li>
-                                    <a href="Acer Veriton Desktops.html" target="_blank">Acer Veriton Desktops</a>
+                                  <li><a href="Acer Veriton Desktops.html" target="_blank">Acer Veriton Desktops</a>
                                   </li>
-                                  <li>
-                                    <a href="Add-In-One.html" target="_blank">Add-In-One</a>
+                                  <li><a href="Add-In-One.html" target="_blank">Add-In-One</a>
                                   </li>
-                                  <li>
-                                    <a href="Chromebase.html" target="_blank">Chromebase</a>
+                                  <li><a href="Chromebase.html" target="_blank">Chromebase</a>
                                   </li>
-                                  <li>
-                                    <a href="Acer Chromebox.html" target="_blank">Acer Chromebox</a>
+                                  <li><a href="Acer Chromebox.html" target="_blank">Acer Chromebox</a>
                                   </li>
-                                  <li>
-                                    <a href="Mini PCs.html" target="_blank">Mini PCs</a>
+                                  <li><a href="Mini PCs.html" target="_blank">Mini PCs</a>
                                   </li>
                                 </ul>
                               </div>
-                              <div class="col-md-4 mega-promo-col">
-                                <a class="mega-promo-card" href="Windows.html" target="_blank">
-                                  <img alt="Windows" class="mega-promo-img" src="images/Banner_Windows11.jpg"/>
-                                    <span class="mega-promo-title">Windows</span>
-                                </a>
+                              <div class="col-md-4 mega-promo-col"><a class="mega-promo-card" href="Windows.html" target="_blank"><img alt="Windows" class="mega-promo-img" src="Images/Banner_Windows11.jpg"/><span class="mega-promo-title">Windows</span></a>
                               </div>
                             </div>
                           </div>
@@ -247,33 +172,28 @@
                           <div class="tab-pane fade" id="tab-chromebooks">
                             <div class="row">
                               <div class="col-md-4">
-                                <h6 class="mega-col-title">By Category</h6>
+                                <h6 class="mega-col-title">By Category
+                                </h6>
                                 <ul class="mega-list">
-                                  <li>
-                                    <a href="Business.html" target="_blank">Business</a>
+                                  <li><a href="Business.html" target="_blank">Business</a>
                                   </li>
-                                  <li>
-                                    <a href="Cloud Gaming.html" target="_blank">Cloud Gaming</a>
+                                  <li><a href="Cloud Gaming.html" target="_blank">Cloud Gaming</a>
                                   </li>
-                                  <li>
-                                    <a href="Everyday.html" target="_blank">Everyday</a>
+                                  <li><a href="Everyday.html" target="_blank">Everyday</a>
                                   </li>
-                                  <li>
-                                    <a href="Education.html" target="_blank">Education</a>
+                                  <li><a href="Education.html" target="_blank">Education</a>
                                   </li>
                                 </ul>
                               </div>
                               <div class="col-md-4">
-                                <h6 class="mega-col-title">By Solution</h6>
+                                <h6 class="mega-col-title">By Solution
+                                </h6>
                                 <ul class="mega-list">
-                                  <li>
-                                    <a href="Chromebook Plus.html" target="_blank">Chromebook Plus</a>
+                                  <li><a href="Chromebook Plus.html" target="_blank">Chromebook Plus</a>
                                   </li>
-                                  <li>
-                                    <a href="ChromeOS Enterprise Solutions.html" target="_blank">ChromeOS Enterprise Solutions</a>
+                                  <li><a href="ChromeOS Enterprise Solutions.html" target="_blank">ChromeOS Enterprise Solutions</a>
                                   </li>
-                                  <li>
-                                    <a href="Cloud Gaming on Chromebook.html" target="_blank">Cloud Gaming on Chromebook</a>
+                                  <li><a href="Cloud Gaming on Chromebook.html" target="_blank">Cloud Gaming on Chromebook</a>
                                   </li>
                                 </ul>
                               </div>
@@ -283,10 +203,10 @@
                           <div class="tab-pane fade" id="tab-tablets">
                             <div class="row">
                               <div class="col-md-4">
-                                <h6 class="mega-col-title">By Series</h6>
+                                <h6 class="mega-col-title">By Series
+                                </h6>
                                 <ul class="mega-list">
-                                  <li>
-                                    <a href="Acer Iconia.html" target="_blank">Acer Iconia</a>
+                                  <li><a href="Acer Iconia.html" target="_blank">Acer Iconia</a>
                                   </li>
                                 </ul>
                               </div>
@@ -296,42 +216,30 @@
                           <div class="tab-pane fade" id="tab-monitors">
                             <div class="row">
                               <div class="col-md-4">
-                                <h6 class="mega-col-title">By Category</h6>
+                                <h6 class="mega-col-title">By Category
+                                </h6>
                                 <ul class="mega-list">
-                                  <li>
-                                    <a href="Predator.html" target="_blank">Predator</a>
+                                  <li><a href="Predator.html" target="_blank">Predator</a>
                                   </li>
-                                  <li>
-                                    <a href="Entertainment.html" target="_blank">Entertainment</a>
+                                  <li><a href="Entertainment.html" target="_blank">Entertainment</a>
                                   </li>
-                                  <li>
-                                    <a href="Business.html" target="_blank">Business</a>
+                                  <li><a href="Business.html" target="_blank">Business</a>
                                   </li>
-                                  <li>
-                                    <a href="Everyday.html" target="_blank">Everyday</a>
+                                  <li><a href="Everyday.html" target="_blank">Everyday</a>
                                   </li>
-                                  <li>
-                                    <a href="Gaming.html" target="_blank">Gaming</a>
+                                  <li><a href="Gaming.html" target="_blank">Gaming</a>
                                   </li>
-                                  <li>
-                                    <a href="Acer SpatialLabs.html" target="_blank">Acer SpatialLabs™</a>
+                                  <li><a href="Acer SpatialLabs.html" target="_blank">Acer SpatialLabs™</a>
                                   </li>
-                                  <li>
-                                    <a href="Touch.html" target="_blank">Touch</a>
+                                  <li><a href="Touch.html" target="_blank">Touch</a>
                                   </li>
-                                  <li>
-                                    <a href="Acer Smart Monitor.html" target="_blank">Acer Smart Monitor</a>
+                                  <li><a href="Acer Smart Monitor.html" target="_blank">Acer Smart Monitor</a>
                                   </li>
-                                  <li>
-                                    <a href="Acer ProDesigner.html" target="_blank">Acer ProDesigner</a>
+                                  <li><a href="Acer ProDesigner.html" target="_blank">Acer ProDesigner</a>
                                   </li>
                                 </ul>
                               </div>
-                              <div class="col-md-4 mega-promo-col">
-                                <a class="mega-promo-card" href="Acer Display Technology.html" target="_blank">
-                                  <img alt="Acer Display Technology" class="mega-promo-img" src="images/Menu_display-technology.jpg"/>
-                                    <span class="mega-promo-title">Acer Display Technology</span>
-                                </a>
+                              <div class="col-md-4 mega-promo-col"><a class="mega-promo-card" href="Acer Display Technology.html" target="_blank"><img alt="Acer Display Technology" class="mega-promo-img" src="Images/Menu_display-technology.jpg"/><span class="mega-promo-title">Acer Display Technology</span></a>
                               </div>
                             </div>
                           </div>
@@ -339,10 +247,10 @@
                           <div class="tab-pane fade" id="tab-projectors">
                             <div class="row">
                               <div class="col-md-4">
-                                <h6 class="mega-col-title">By Category</h6>
+                                <h6 class="mega-col-title">By Category
+                                </h6>
                                 <ul class="mega-list">
-                                  <li>
-                                    <a href="Portable.html" target="_blank">Portable</a>
+                                  <li><a href="Portable.html" target="_blank">Portable</a>
                                   </li>
                                 </ul>
                               </div>
@@ -352,31 +260,24 @@
                           <div class="tab-pane fade" id="tab-electronics">
                             <div class="row">
                               <div class="col-md-4">
-                                <h6 class="mega-col-title">By Category</h6>
+                                <h6 class="mega-col-title">By Category
+                                </h6>
                                 <ul class="mega-list">
-                                  <li>
-                                    <a href="Predator.html" target="_blank">Predator</a>
+                                  <li><a href="Predator.html" target="_blank">Predator</a>
                                   </li>
-                                  <li>
-                                    <a href="Apparel, Bags &amp; Gear.html" target="_blank">Apparel, Bags &amp; Gear</a>
+                                  <li><a href="Apparel, Bags &amp; Gear.html" target="_blank">Apparel, Bags &amp; Gear</a>
                                   </li>
-                                  <li>
-                                    <a href="Cables, Docks &amp; Dongles.html" target="_blank">Cables, Docks &amp; Dongles</a>
+                                  <li><a href="Cables, Docks &amp; Dongles.html" target="_blank">Cables, Docks &amp; Dongles</a>
                                   </li>
-                                  <li>
-                                    <a href="Gaming.html" target="_blank">Gaming</a>
+                                  <li><a href="Gaming.html" target="_blank">Gaming</a>
                                   </li>
-                                  <li>
-                                    <a href="Headsets &amp; Audio.html" target="_blank">Headsets &amp; Audio</a>
+                                  <li><a href="Headsets &amp; Audio.html" target="_blank">Headsets &amp; Audio</a>
                                   </li>
-                                  <li>
-                                    <a href="Keyboards, Mice &amp; Stylus.html" target="_blank">Keyboards, Mice &amp; Stylus</a>
+                                  <li><a href="Keyboards, Mice &amp; Stylus.html" target="_blank">Keyboards, Mice &amp; Stylus</a>
                                   </li>
-                                  <li>
-                                    <a href="Smart Devices.html" target="_blank">Smart Devices</a>
+                                  <li><a href="Smart Devices.html" target="_blank">Smart Devices</a>
                                   </li>
-                                  <li>
-                                    <a href="Cameras.html" target="_blank">Cameras</a>
+                                  <li><a href="Cameras.html" target="_blank">Cameras</a>
                                   </li>
                                 </ul>
                               </div>
@@ -386,16 +287,14 @@
                           <div class="tab-pane fade" id="tab-networking">
                             <div class="row">
                               <div class="col-md-4">
-                                <h6 class="mega-col-title">By Category</h6>
+                                <h6 class="mega-col-title">By Category
+                                </h6>
                                 <ul class="mega-list">
-                                  <li>
-                                    <a href="Predator.html" target="_blank">Predator</a>
+                                  <li><a href="Predator.html" target="_blank">Predator</a>
                                   </li>
-                                  <li>
-                                    <a href="Wi-Fi.html" target="_blank">Wi-Fi</a>
+                                  <li><a href="Wi-Fi.html" target="_blank">Wi-Fi</a>
                                   </li>
-                                  <li>
-                                    <a href="5G.html" target="_blank">5G</a>
+                                  <li><a href="5G.html" target="_blank">5G</a>
                                   </li>
                                 </ul>
                               </div>
@@ -405,19 +304,16 @@
                           <div class="tab-pane fade" id="tab-emobility">
                             <div class="row">
                               <div class="col-md-4">
-                                <h6 class="mega-col-title">By Category</h6>
+                                <h6 class="mega-col-title">By Category
+                                </h6>
                                 <ul class="mega-list">
-                                  <li>
-                                    <a href="Predator.html" target="_blank">Predator</a>
+                                  <li><a href="Predator.html" target="_blank">Predator</a>
                                   </li>
-                                  <li>
-                                    <a href="eBikes.html" target="_blank">eBikes</a>
+                                  <li><a href="eBikes.html" target="_blank">eBikes</a>
                                   </li>
-                                  <li>
-                                    <a href="eScooters.html" target="_blank">eScooters</a>
+                                  <li><a href="eScooters.html" target="_blank">eScooters</a>
                                   </li>
-                                  <li>
-                                    <a href="Kinetic Tech.html" target="_blank">Kinetic Tech</a>
+                                  <li><a href="Kinetic Tech.html" target="_blank">Kinetic Tech</a>
                                   </li>
                                 </ul>
                               </div>
@@ -427,16 +323,14 @@
                           <div class="tab-pane fade" id="tab-handheld">
                             <div class="row">
                               <div class="col-md-4">
-                                <h6 class="mega-col-title">Featured</h6>
+                                <h6 class="mega-col-title">Featured
+                                </h6>
                                 <ul class="mega-list">
-                                  <li>
-                                    <a href="Acer Nitro Blaze 11.html" target="_blank">Acer Nitro Blaze 11</a>
+                                  <li><a href="Acer Nitro Blaze 11.html" target="_blank">Acer Nitro Blaze 11</a>
                                   </li>
-                                  <li>
-                                    <a href="Acer Nitro Blaze 8.html" target="_blank">Acer Nitro Blaze 8</a>
+                                  <li><a href="Acer Nitro Blaze 8.html" target="_blank">Acer Nitro Blaze 8</a>
                                   </li>
-                                  <li>
-                                    <a href="Acer Nitro Blaze 7.html" target="_blank">Acer Nitro Blaze 7</a>
+                                  <li><a href="Acer Nitro Blaze 7.html" target="_blank">Acer Nitro Blaze 7</a>
                                   </li>
                                 </ul>
                               </div>
@@ -448,34 +342,24 @@
                   </div>
                 </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Business.html" target="_blank">Business</a>
+              <li class="nav-item"><a class="nav-link" href="Business.html" target="_blank">Business</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Education.html" target="_blank">Education</a>
+              <li class="nav-item"><a class="nav-link" href="Education.html" target="_blank">Education</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Support.html" target="_blank">Support</a>
+              <li class="nav-item"><a class="nav-link" href="Support.html" target="_blank">Support</a>
               </li>
             </ul>
           </div>
           <!-- Search Trigger -->
-          <div class="acer-search-box">
-            <button aria-controls="acerSearchPanel" aria-expanded="false" aria-label="Open search" class="btn btn-outline-secondary border-0 acer-search-btn" data-bs-target="#acerSearchPanel" data-bs-toggle="collapse" type="button">
-              <i aria-hidden="true" class="bi bi-search fs-5"></i>
-            </button>
+          <div class="acer-search-box"><button aria-controls="acerSearchPanel" aria-expanded="false" aria-label="Open search" class="btn btn-outline-secondary border-0 acer-search-btn" data-bs-target="#acerSearchPanel" data-bs-toggle="collapse" type="button"><i aria-hidden="true" class="bi bi-search fs-5"></i></button>
           </div>
         </div>
       </nav>
       <!-- Full-width Search Panel -->
       <div class="collapse acer-search-panel" id="acerSearchPanel">
         <div class="container py-3">
-          <form action="search.html" class="acer-search-form" method="get">
-            <label class="visually-hidden" for="acerSearchInput">Search Acer</label>
-            <div class="input-group">
-              <span aria-hidden="true" class="input-group-text bg-white border-end-0">
-              <i class="bi bi-search text-muted"></i>
-              </span> <input aria-label="Search acer.com" class="form-control border-start-0 ps-0" id="acerSearchInput" name="q" placeholder="Search acer.com..." type="search"/> <button class="btn btn-acer-light px-4 fw-bold" type="submit">Search</button>
+          <form action="search.html" class="acer-search-form" method="get"><label class="visually-hidden" for="acerSearchInput">Search Acer</label>
+            <div class="input-group"><span aria-hidden="true" class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span><input aria-label="Search acer.com" class="form-control border-start-0 ps-0" id="acerSearchInput" name="q" placeholder="Search acer.com..." type="search"/><button class="btn btn-acer-light px-4 fw-bold" type="submit">Search</button>
             </div>
           </form>
         </div>
@@ -484,196 +368,178 @@
     <!-- MOBILE OFFCANVAS DRILL-DOWN MENU -->
     <div class="offcanvas offcanvas-start acer-mobile-offcanvas" id="mobileMenu" tabindex="-1" aria-labelledby="mobileMenuLabel" data-bs-scroll="true">
       <div class="offcanvas-header acer-mobile-header">
-        <div class="acer-mobile-brand-row"><button class="acer-mobile-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close navigation"><span></span><span></span></button> <a class="acer-logo-text acer-mobile-logo" id="mobileMenuLabel" href="acer.html">acer</a></div>
-        <div class="acer-mobile-tools"><button class="acer-mobile-tool" type="button" aria-label="Open search" data-bs-dismiss="offcanvas" data-bs-toggle="collapse" data-bs-target="#acerSearchPanel"><i class="bi bi-search"></i></button> <a class="acer-mobile-tool" href="cart.html" aria-label="Cart"><i class="bi bi-cart3"></i><span class="acer-mobile-cart-count">2</span></a></div>
+        <div class="acer-mobile-brand-row"><button class="acer-mobile-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close navigation"><span></span><span></span></button><a class="acer-logo-text acer-mobile-logo" id="mobileMenuLabel" href="acer.html">acer</a>
+        </div>
+        <div class="acer-mobile-tools"><button class="acer-mobile-tool" type="button" aria-label="Open search" data-bs-dismiss="offcanvas" data-bs-toggle="collapse" data-bs-target="#acerSearchPanel"><i class="bi bi-search"></i></button><a class="acer-mobile-tool" href="cart.html" aria-label="Cart"><i class="bi bi-cart3"></i><span class="acer-mobile-cart-count">2</span></a>
+        </div>
       </div>
-      <div class="offcanvas-body p-0 acer-mobile-body">
+      <div class="offcanvas-body p-0 acer-mobile-body"><input class="acer-mobile-page-state" type="radio" name="mobile-menu-page" id="mobile-page-main" checked aria-hidden="true" tabindex="-1"><input class="acer-mobile-page-state" type="radio" name="mobile-menu-page" id="mobile-page-products" aria-hidden="true" tabindex="-1"><input class="acer-mobile-page-state" type="radio" name="mobile-menu-page" id="mobile-page-laptops" aria-hidden="true" tabindex="-1"><input class="acer-mobile-page-state" type="radio" name="mobile-menu-page" id="mobile-page-desktops" aria-hidden="true" tabindex="-1"><input class="acer-mobile-page-state" type="radio" name="mobile-menu-page" id="mobile-page-chromebooks" aria-hidden="true" tabindex="-1"><input class="acer-mobile-page-state" type="radio" name="mobile-menu-page" id="mobile-page-tablets" aria-hidden="true" tabindex="-1"><input class="acer-mobile-page-state" type="radio" name="mobile-menu-page" id="mobile-page-monitors" aria-hidden="true" tabindex="-1"><input class="acer-mobile-page-state" type="radio" name="mobile-menu-page" id="mobile-page-projectors" aria-hidden="true" tabindex="-1"><input class="acer-mobile-page-state" type="radio" name="mobile-menu-page" id="mobile-page-electronics-accessories" aria-hidden="true" tabindex="-1"><input class="acer-mobile-page-state" type="radio" name="mobile-menu-page" id="mobile-page-networking" aria-hidden="true" tabindex="-1"><input class="acer-mobile-page-state" type="radio" name="mobile-menu-page" id="mobile-page-emobility" aria-hidden="true" tabindex="-1"><input class="acer-mobile-page-state" type="radio" name="mobile-menu-page" id="mobile-page-handheld-gaming" aria-hidden="true" tabindex="-1"><input class="acer-mobile-page-state" type="radio" name="mobile-menu-page" id="mobile-page-brands" aria-hidden="true" tabindex="-1"><input class="acer-mobile-page-state" type="radio" name="mobile-menu-page" id="mobile-page-account" aria-hidden="true" tabindex="-1">
         <div class="acer-mobile-page is-active" data-mobile-page="main">
-          <nav class="acer-mobile-links" aria-label="Mobile navigation">
-            <a href="Shop.html" target="_blank">Shop</a><a href="Deals.html" target="_blank">Deals</a>
-            <a href="ai.html">Acer AI</a> 
-              <button type="button" data-mobile-open="products">Products<i class="bi bi-chevron-right" aria-hidden="true"></i></button> 
-              <a href="Business.html" target="_blank">Business Solutions</a><a href="Education.html" target="_blank">Education Solutions</a><a href="Support.html" target="_blank">Support</a> 
-              <button class="acer-brands-mobile-link" type="button" data-mobile-open="brands">Acer Brands<i class="bi bi-chevron-right" aria-hidden="true"></i></button> <button type="button" data-mobile-open="account">Acer ID<i class="bi bi-chevron-right" aria-hidden="true"></i></button>
-            </nav>
+          <nav class="acer-mobile-links" aria-label="Mobile navigation"><a href="Shop.html" target="_blank">Shop</a><a href="Deals.html" target="_blank">Deals</a><a href="ai.html">Acer AI</a><label for="mobile-page-products">Products<i class="bi bi-chevron-right" aria-hidden="true"></i></label><a href="Business.html" target="_blank">Business Solutions</a><a href="Education.html" target="_blank">Education Solutions</a><a href="Support.html" target="_blank">Support</a><label class="acer-brands-mobile-link" for="mobile-page-brands">Acer Brands<i class="bi bi-chevron-right" aria-hidden="true"></i></label><label for="mobile-page-account">Acer ID<i class="bi bi-chevron-right" aria-hidden="true"></i></label>
+          </nav>
         </div>
         <div class="acer-mobile-page" data-mobile-page="products">
-          <div class="acer-mobile-subhead"><button type="button" data-mobile-back="main" aria-label="Back to main menu"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Products</span></button></div>
-          <nav class="acer-mobile-links acer-mobile-sub-links" aria-label="Products"><a href="Products.html" target="_blank">All Products</a> <button type="button" data-mobile-open="laptops">Laptops<i class="bi bi-chevron-right" aria-hidden="true"></i></button> <button type="button" data-mobile-open="desktops">Desktops<i class="bi bi-chevron-right" aria-hidden="true"></i></button> <button type="button" data-mobile-open="chromebooks">Chromebooks<i class="bi bi-chevron-right" aria-hidden="true"></i></button> <button type="button" data-mobile-open="tablets">Tablets<i class="bi bi-chevron-right" aria-hidden="true"></i></button> <button type="button" data-mobile-open="monitors">Monitors<i class="bi bi-chevron-right" aria-hidden="true"></i></button> <button type="button" data-mobile-open="projectors">Projectors<i class="bi bi-chevron-right" aria-hidden="true"></i></button> <button type="button" data-mobile-open="electronics-accessories">Electronics & Accessories<i class="bi bi-chevron-right" aria-hidden="true"></i></button> <button type="button" data-mobile-open="networking">Networking<i class="bi bi-chevron-right" aria-hidden="true"></i></button> <button type="button" data-mobile-open="emobility">eMobility<i class="bi bi-chevron-right" aria-hidden="true"></i></button> <button type="button" data-mobile-open="handheld-gaming">Handheld Gaming<i class="bi bi-chevron-right" aria-hidden="true"></i></button></nav>
+          <div class="acer-mobile-subhead"><label aria-label="Back to main menu" for="mobile-page-main"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Products</span></label>
+          </div>
+          <nav class="acer-mobile-links acer-mobile-sub-links" aria-label="Products"><a href="Products.html" target="_blank">All Products</a><label for="mobile-page-laptops">Laptops<i class="bi bi-chevron-right" aria-hidden="true"></i></label><label for="mobile-page-desktops">Desktops<i class="bi bi-chevron-right" aria-hidden="true"></i></label><label for="mobile-page-chromebooks">Chromebooks<i class="bi bi-chevron-right" aria-hidden="true"></i></label><label for="mobile-page-tablets">Tablets<i class="bi bi-chevron-right" aria-hidden="true"></i></label><label for="mobile-page-monitors">Monitors<i class="bi bi-chevron-right" aria-hidden="true"></i></label><label for="mobile-page-projectors">Projectors<i class="bi bi-chevron-right" aria-hidden="true"></i></label><label for="mobile-page-electronics-accessories">Electronics & Accessories<i class="bi bi-chevron-right" aria-hidden="true"></i></label><label for="mobile-page-networking">Networking<i class="bi bi-chevron-right" aria-hidden="true"></i></label><label for="mobile-page-emobility">eMobility<i class="bi bi-chevron-right" aria-hidden="true"></i></label><label for="mobile-page-handheld-gaming">Handheld Gaming<i class="bi bi-chevron-right" aria-hidden="true"></i></label>
+          </nav>
         </div>
         <div class="acer-mobile-page acer-mobile-category-page" data-mobile-page="laptops">
-          <div class="acer-mobile-subhead"><button type="button" data-mobile-back="products" aria-label="Back to Products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Laptops</span></button></div>
+          <div class="acer-mobile-subhead"><label aria-label="Back to Products" for="mobile-page-products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Laptops</span></label>
+          </div>
           <div class="acer-mobile-category-content">
             <section class="acer-mobile-section">
-              <h2>By Category</h2>
-              <a href="Copilot+ PC.html">Copilot+ PC</a>
-              <a href="AI PCs.html">AI PCs</a>
-              <a href="Gaming.html">Gaming</a>
-              <a href="Chromebooks.html">Chromebooks</a>
+              <h2>By Category
+              </h2>
+<a href="Copilot+ PC.html">Copilot+ PC</a><a href="AI PCs.html">AI PCs</a><a href="Gaming.html">Gaming</a><a href="Chromebooks.html">Chromebooks</a>
             </section>
             <section class="acer-mobile-section">
-              <h2>By Series</h2>
-              <a href="Predator.html">Predator</a>
-              <a href="Acer Swift.html">Acer Swift</a>
-              <a href="Acer Aspire.html">Acer Aspire</a>
-              <a href="Acer Nitro.html">Acer Nitro</a>
-              <a href="Acer Vero.html">Acer Vero</a>
-              <a href="Acer Googlebook.html">Acer Googlebook</a>
-              <a href="Acer TravelMate.html">Acer TravelMate</a>
-              <a href="Acer Extensa.html">Acer Extensa</a>
+              <h2>By Series
+              </h2>
+<a href="Predator.html">Predator</a><a href="Acer Swift.html">Acer Swift</a><a href="Acer Aspire.html">Acer Aspire</a><a href="Acer Nitro.html">Acer Nitro</a><a href="Acer Vero.html">Acer Vero</a><a href="Acer Googlebook.html">Acer Googlebook</a><a href="Acer TravelMate.html">Acer TravelMate</a><a href="Acer Extensa.html">Acer Extensa</a>
             </section>
             <section class="acer-mobile-section acer-mobile-promo">
-              <h2>Featured</h2>
-              <a class="acer-mobile-promo-card" href="Windows.html"><img src="images/Banner_Windows11.jpg" alt="Windows 11"><span>Windows</span></a>
+              <h2>Featured
+              </h2>
+<a class="acer-mobile-promo-card" href="Windows.html"><img src="Images/Banner_Windows11.jpg" alt="Windows 11"><span>Windows</span></a>
             </section>
             <section class="acer-mobile-section acer-mobile-promo">
-              <h2>Featured</h2>
-              <a class="acer-mobile-promo-card" href="Acer AMD Ryzen Series Laptops.html"><img src="images/AMD_entry_point.jpg" alt="Acer AMD Ryzen"><span>Acer AMD Ryzen™ Series Laptops</span></a>
+              <h2>Featured
+              </h2>
+<a class="acer-mobile-promo-card" href="Acer AMD Ryzen Series Laptops.html"><img src="Images/AMD_entry_point.jpg" alt="Acer AMD Ryzen"><span>Acer AMD Ryzen™ Series Laptops</span></a>
             </section>
           </div>
         </div>
         <div class="acer-mobile-page acer-mobile-category-page" data-mobile-page="desktops">
-          <div class="acer-mobile-subhead"><button type="button" data-mobile-back="products" aria-label="Back to Products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Desktops</span></button></div>
+          <div class="acer-mobile-subhead"><label aria-label="Back to Products" for="mobile-page-products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Desktops</span></label>
+          </div>
           <div class="acer-mobile-category-content">
             <section class="acer-mobile-section">
-              <h2>By Category</h2>
-              <a href="Predator.html">Predator</a>
-              <a href="Gaming.html">Gaming</a>
-              <a href="Business.html">Business</a>
-              <a href="Education.html">Education</a>
-              <a href="Components.html">Components</a>
+              <h2>By Category
+              </h2>
+<a href="Predator.html">Predator</a><a href="Gaming.html">Gaming</a><a href="Business.html">Business</a><a href="Education.html">Education</a><a href="Components.html">Components</a>
             </section>
             <section class="acer-mobile-section">
-              <h2>By Series</h2>
-              <a href="Acer Aspire All in Ones.html">Acer Aspire All in Ones</a>
-              <a href="Acer Aspire Classic Desktops.html">Acer Aspire Classic Desktops</a>
-              <a href="Acer Nitro.html">Acer Nitro</a>
-              <a href="Acer Veriton Desktops.html">Acer Veriton Desktops</a>
-              <a href="Add-In-One.html">Add-In-One</a>
-              <a href="Chromebase.html">Chromebase</a>
-              <a href="Acer Chromebox.html">Acer Chromebox</a>
-              <a href="Mini PCs.html">Mini PCs</a>
+              <h2>By Series
+              </h2>
+<a href="Acer Aspire All in Ones.html">Acer Aspire All in Ones</a><a href="Acer Aspire Classic Desktops.html">Acer Aspire Classic Desktops</a><a href="Acer Nitro.html">Acer Nitro</a><a href="Acer Veriton Desktops.html">Acer Veriton Desktops</a><a href="Add-In-One.html">Add-In-One</a><a href="Chromebase.html">Chromebase</a><a href="Acer Chromebox.html">Acer Chromebox</a><a href="Mini PCs.html">Mini PCs</a>
             </section>
             <section class="acer-mobile-section acer-mobile-promo">
-              <h2>Featured</h2>
-              <a class="acer-mobile-promo-card" href="Windows.html"><img src="images/Banner_Windows11.jpg" alt="Windows"><span>Windows</span></a>
+              <h2>Featured
+              </h2>
+<a class="acer-mobile-promo-card" href="Windows.html"><img src="Images/Banner_Windows11.jpg" alt="Windows"><span>Windows</span></a>
             </section>
           </div>
         </div>
         <div class="acer-mobile-page acer-mobile-category-page" data-mobile-page="chromebooks">
-          <div class="acer-mobile-subhead"><button type="button" data-mobile-back="products" aria-label="Back to Products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Chromebooks</span></button></div>
+          <div class="acer-mobile-subhead"><label aria-label="Back to Products" for="mobile-page-products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Chromebooks</span></label>
+          </div>
           <div class="acer-mobile-category-content">
             <section class="acer-mobile-section">
-              <h2>By Category</h2>
-              <a href="Business.html">Business</a>
-              <a href="Cloud Gaming.html">Cloud Gaming</a>
-              <a href="Everyday.html">Everyday</a>
-              <a href="Education.html">Education</a>
+              <h2>By Category
+              </h2>
+<a href="Business.html">Business</a><a href="Cloud Gaming.html">Cloud Gaming</a><a href="Everyday.html">Everyday</a><a href="Education.html">Education</a>
             </section>
             <section class="acer-mobile-section">
-              <h2>By Solution</h2>
-              <a href="Chromebook Plus.html">Chromebook Plus</a>
-              <a href="ChromeOS Enterprise Solutions.html">ChromeOS Enterprise Solutions</a>
-              <a href="Cloud Gaming on Chromebook.html">Cloud Gaming on Chromebook</a>
+              <h2>By Solution
+              </h2>
+<a href="Chromebook Plus.html">Chromebook Plus</a><a href="ChromeOS Enterprise Solutions.html">ChromeOS Enterprise Solutions</a><a href="Cloud Gaming on Chromebook.html">Cloud Gaming on Chromebook</a>
             </section>
           </div>
         </div>
         <div class="acer-mobile-page acer-mobile-category-page" data-mobile-page="tablets">
-          <div class="acer-mobile-subhead"><button type="button" data-mobile-back="products" aria-label="Back to Products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Tablets</span></button></div>
+          <div class="acer-mobile-subhead"><label aria-label="Back to Products" for="mobile-page-products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Tablets</span></label>
+          </div>
           <div class="acer-mobile-category-content">
             <section class="acer-mobile-section">
-              <h2>By Series</h2>
-              <a href="Acer Iconia.html">Acer Iconia</a>
+              <h2>By Series
+              </h2>
+<a href="Acer Iconia.html">Acer Iconia</a>
             </section>
           </div>
         </div>
         <div class="acer-mobile-page acer-mobile-category-page" data-mobile-page="monitors">
-          <div class="acer-mobile-subhead"><button type="button" data-mobile-back="products" aria-label="Back to Products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Monitors</span></button></div>
+          <div class="acer-mobile-subhead"><label aria-label="Back to Products" for="mobile-page-products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Monitors</span></label>
+          </div>
           <div class="acer-mobile-category-content">
             <section class="acer-mobile-section">
-              <h2>By Category</h2>
-              <a href="Predator.html">Predator</a>
-              <a href="Entertainment.html">Entertainment</a>
-              <a href="Business.html">Business</a>
-              <a href="Everyday.html">Everyday</a>
-              <a href="Gaming.html">Gaming</a>
-              <a href="Acer SpatialLabs.html">Acer SpatialLabs™</a>
-              <a href="Touch.html">Touch</a>
-              <a href="Acer Smart Monitor.html">Acer Smart Monitor</a>
-              <a href="Acer ProDesigner.html">Acer ProDesigner</a>
+              <h2>By Category
+              </h2>
+<a href="Predator.html">Predator</a><a href="Entertainment.html">Entertainment</a><a href="Business.html">Business</a><a href="Everyday.html">Everyday</a><a href="Gaming.html">Gaming</a><a href="Acer SpatialLabs.html">Acer SpatialLabs™</a><a href="Touch.html">Touch</a><a href="Acer Smart Monitor.html">Acer Smart Monitor</a><a href="Acer ProDesigner.html">Acer ProDesigner</a>
             </section>
             <section class="acer-mobile-section acer-mobile-promo">
-              <h2>Featured</h2>
-              <a class="acer-mobile-promo-card" href="Acer Display Technology.html"><img src="images/Menu_display-technology.jpg" alt="Acer Display Technology"><span>Acer Display Technology</span></a>
+              <h2>Featured
+              </h2>
+<a class="acer-mobile-promo-card" href="Acer Display Technology.html"><img src="Images/Menu_display-technology.jpg" alt="Acer Display Technology"><span>Acer Display Technology</span></a>
             </section>
           </div>
         </div>
         <div class="acer-mobile-page acer-mobile-category-page" data-mobile-page="projectors">
-          <div class="acer-mobile-subhead"><button type="button" data-mobile-back="products" aria-label="Back to Products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Projectors</span></button></div>
+          <div class="acer-mobile-subhead"><label aria-label="Back to Products" for="mobile-page-products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Projectors</span></label>
+          </div>
           <div class="acer-mobile-category-content">
             <section class="acer-mobile-section">
-              <h2>By Category</h2>
-              <a href="Portable.html">Portable</a>
+              <h2>By Category
+              </h2>
+<a href="Portable.html">Portable</a>
             </section>
           </div>
         </div>
         <div class="acer-mobile-page acer-mobile-category-page" data-mobile-page="electronics-accessories">
-          <div class="acer-mobile-subhead"><button type="button" data-mobile-back="products" aria-label="Back to Products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Electronics & Accessories</span></button></div>
+          <div class="acer-mobile-subhead"><label aria-label="Back to Products" for="mobile-page-products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Electronics & Accessories</span></label>
+          </div>
           <div class="acer-mobile-category-content">
             <section class="acer-mobile-section">
-              <h2>By Category</h2>
-              <a href="Predator.html">Predator</a>
-              <a href="Apparel, Bags &amp; Gear.html">Apparel, Bags & Gear</a>
-              <a href="Cables, Docks &amp; Dongles.html">Cables, Docks & Dongles</a>
-              <a href="Gaming.html">Gaming</a>
-              <a href="Headsets &amp; Audio.html">Headsets & Audio</a>
-              <a href="Keyboards, Mice &amp; Stylus.html">Keyboards, Mice & Stylus</a>
-              <a href="Smart Devices.html">Smart Devices</a>
-              <a href="Cameras.html">Cameras</a>
+              <h2>By Category
+              </h2>
+<a href="Predator.html">Predator</a><a href="Apparel, Bags &amp; Gear.html">Apparel, Bags & Gear</a><a href="Cables, Docks &amp; Dongles.html">Cables, Docks & Dongles</a><a href="Gaming.html">Gaming</a><a href="Headsets &amp; Audio.html">Headsets & Audio</a><a href="Keyboards, Mice &amp; Stylus.html">Keyboards, Mice & Stylus</a><a href="Smart Devices.html">Smart Devices</a><a href="Cameras.html">Cameras</a>
             </section>
           </div>
         </div>
         <div class="acer-mobile-page acer-mobile-category-page" data-mobile-page="networking">
-          <div class="acer-mobile-subhead"><button type="button" data-mobile-back="products" aria-label="Back to Products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Networking</span></button></div>
+          <div class="acer-mobile-subhead"><label aria-label="Back to Products" for="mobile-page-products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Networking</span></label>
+          </div>
           <div class="acer-mobile-category-content">
             <section class="acer-mobile-section">
-              <h2>By Category</h2>
-              <a href="Predator.html">Predator</a>
-              <a href="Wi-Fi.html">Wi-Fi</a>
-              <a href="5G.html">5G</a>
+              <h2>By Category
+              </h2>
+<a href="Predator.html">Predator</a><a href="Wi-Fi.html">Wi-Fi</a><a href="5G.html">5G</a>
             </section>
           </div>
         </div>
         <div class="acer-mobile-page acer-mobile-category-page" data-mobile-page="emobility">
-          <div class="acer-mobile-subhead"><button type="button" data-mobile-back="products" aria-label="Back to Products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>eMobility</span></button></div>
+          <div class="acer-mobile-subhead"><label aria-label="Back to Products" for="mobile-page-products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>eMobility</span></label>
+          </div>
           <div class="acer-mobile-category-content">
             <section class="acer-mobile-section">
-              <h2>By Category</h2>
-              <a href="Predator.html">Predator</a>
-              <a href="eBikes.html">eBikes</a>
-              <a href="eScooters.html">eScooters</a>
-              <a href="Kinetic Tech.html">Kinetic Tech</a>
+              <h2>By Category
+              </h2>
+<a href="Predator.html">Predator</a><a href="eBikes.html">eBikes</a><a href="eScooters.html">eScooters</a><a href="Kinetic Tech.html">Kinetic Tech</a>
             </section>
           </div>
         </div>
         <div class="acer-mobile-page acer-mobile-category-page" data-mobile-page="handheld-gaming">
-          <div class="acer-mobile-subhead"><button type="button" data-mobile-back="products" aria-label="Back to Products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Handheld Gaming</span></button></div>
+          <div class="acer-mobile-subhead"><label aria-label="Back to Products" for="mobile-page-products"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Handheld Gaming</span></label>
+          </div>
           <div class="acer-mobile-category-content">
             <section class="acer-mobile-section">
-              <h2>Featured</h2>
-              <a href="Acer Nitro Blaze 11.html">Acer Nitro Blaze 11</a>
-              <a href="Acer Nitro Blaze 8.html">Acer Nitro Blaze 8</a>
-              <a href="Acer Nitro Blaze 7.html">Acer Nitro Blaze 7</a>
+              <h2>Featured
+              </h2>
+<a href="Acer Nitro Blaze 11.html">Acer Nitro Blaze 11</a><a href="Acer Nitro Blaze 8.html">Acer Nitro Blaze 8</a><a href="Acer Nitro Blaze 7.html">Acer Nitro Blaze 7</a>
             </section>
           </div>
         </div>
         <div class="acer-mobile-page acer-brands-page" data-mobile-page="brands">
-          <div class="acer-mobile-subhead"><button type="button" data-mobile-back="main" aria-label="Back to main menu"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Acer Brands</span></button></div>
-          <nav class="acer-mobile-links acer-mobile-sub-links" aria-label="Acer Brands"><a href="https://www.acer.com/us-en">Acer</a><a href="https://www.acer.com/us-en/predator">Predator</a><a href="https://www.planet9.gg">Planet9</a><a href="https://www.acer.com/us-en">SpatialLabs</a><a href="https://www.acer.com/us-en">Acerpure</a><a href="https://www.acer.com/us-en">Altos</a><a href="https://www.acer.com/us-en">Aopen</a></nav>
+          <div class="acer-mobile-subhead"><label aria-label="Back to main menu" for="mobile-page-main"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Acer Brands</span></label>
+          </div>
+          <nav class="acer-mobile-links acer-mobile-sub-links" aria-label="Acer Brands"><a href="https://www.acer.com/us-en">Acer</a><a href="https://www.acer.com/us-en/predator">Predator</a><a href="https://www.planet9.gg">Planet9</a><a href="https://www.acer.com/us-en">SpatialLabs</a><a href="https://www.acer.com/us-en">Acerpure</a><a href="https://www.acer.com/us-en">Altos</a><a href="https://www.acer.com/us-en">Aopen</a>
+          </nav>
         </div>
         <div class="acer-mobile-page" data-mobile-page="account">
-          <div class="acer-mobile-subhead"><button type="button" data-mobile-back="main" aria-label="Back to main menu"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Acer ID</span></button></div>
-          <nav class="acer-mobile-links acer-mobile-sub-links" aria-label="Acer ID"><a href="login.html" target="_blank">Sign In</a><a href="signup.html" target="_blank">Sign Up</a><a href="acerid.html" target="_blank">What's Acer ID</a></nav>
+          <div class="acer-mobile-subhead"><label aria-label="Back to main menu" for="mobile-page-main"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Acer ID</span></label>
+          </div>
+          <nav class="acer-mobile-links acer-mobile-sub-links" aria-label="Acer ID"><a href="login.html" target="_blank">Sign In</a><a href="signup.html" target="_blank">Sign Up</a><a href="acerid.html" target="_blank">What's Acer ID</a>
+          </nav>
         </div>
       </div>
     </div>
@@ -681,12 +547,14 @@
     <div aria-hidden="true" aria-labelledby="searchModalLabel" class="modal fade" id="searchModal" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
-          <div class="modal-header border-0 pb-0"><button aria-label="Close" class="btn-close shadow-none" data-bs-dismiss="modal" type="button"></button></div>
+          <div class="modal-header border-0 pb-0"><button aria-label="Close" class="btn-close shadow-none" data-bs-dismiss="modal" type="button"></button>
+          </div>
           <div class="modal-body p-4">
-            <form class="d-flex align-items-center border-bottom border-2 border-dark pb-2 mb-4" id="searchForm" onsubmit="event.preventDefault()"><i class="bi bi-search fs-4 me-3 text-secondary"></i> <input aria-label="Search acer.com" autofocus="" class="form-control border-0 shadow-none fs-5 p-0" placeholder="Search acer.com..." type="search"> </input></form>
-            <div class="popular-searches">
-              <span class="text-secondary small fw-semibold text-uppercase d-block mb-3">Popular Searches</span>
-              <div class="d-flex flex-wrap gap-2"><a class="badge bg-light text-dark text-decoration-none border py-2 px-3 rounded-pill" href="Swift Go 14.html" target="_blank">Swift Go 14</a> <a class="badge bg-light text-dark text-decoration-none border py-2 px-3 rounded-pill" href="Predator Helios.html" target="_blank">Predator Helios</a> <a class="badge bg-light text-dark text-decoration-none border py-2 px-3 rounded-pill" href="Copilot+ PC.html" target="_blank">Copilot+ PC</a> <a class="badge bg-light text-dark text-decoration-none border py-2 px-3 rounded-pill" href="OLED Monitors.html" target="_blank">OLED Monitors</a></div>
+            <form class="d-flex align-items-center border-bottom border-2 border-dark pb-2 mb-4" id="searchForm" onsubmit="event.preventDefault()"><i class="bi bi-search fs-4 me-3 text-secondary"></i><input aria-label="Search acer.com" autofocus="" class="form-control border-0 shadow-none fs-5 p-0" placeholder="Search acer.com..." type="search"></input>
+            </form>
+            <div class="popular-searches"><span class="text-secondary small fw-semibold text-uppercase d-block mb-3">Popular Searches</span>
+              <div class="d-flex flex-wrap gap-2"><a class="badge bg-light text-dark text-decoration-none border py-2 px-3 rounded-pill" href="Swift Go 14.html" target="_blank">Swift Go 14</a><a class="badge bg-light text-dark text-decoration-none border py-2 px-3 rounded-pill" href="Predator Helios.html" target="_blank">Predator Helios</a><a class="badge bg-light text-dark text-decoration-none border py-2 px-3 rounded-pill" href="Copilot+ PC.html" target="_blank">Copilot+ PC</a><a class="badge bg-light text-dark text-decoration-none border py-2 px-3 rounded-pill" href="OLED Monitors.html" target="_blank">OLED Monitors</a>
+              </div>
             </div>
           </div>
         </div>
@@ -698,111 +566,137 @@
         <div class="carousel slide" data-bs-interval="3000" data-bs-ride="carousel" id="heroCarousel">
           <div class="carousel-inner">
             <!-- Slide 1 -->
-            <div class="carousel-item active hero-bg-slide" style='background-image: url("images/Header (1).jpg")'>
-              <div class="hero-overlay"></div>
+            <div class="carousel-item active hero-bg-slide" style='background-image: url("Images/Header (1).jpg")'>
+              <div class="hero-overlay">
+              </div>
               <div class="container h-100 d-flex flex-column justify-content-center py-5">
-                <div class="col-12 col-lg-7 text-white anim-content">
-                  <span class="text-uppercase fw-semibold tracking-wide text-acer mb-2 d-inline-block">Special Event</span>
-                  <h1 class="display-3 fw-bolder mb-3 hero-headline">Acer Innovation at IFA 2026</h1>
-                  <p class="lead mb-4 fw-normal opacity-90">Discover Acer's latest mini-AI workstation, laptops with
-                      ultra-light designs, and boundary-pushing gaming handhelds.</p>
+                <div class="col-12 col-lg-7 text-white anim-content"><span class="text-uppercase fw-semibold tracking-wide text-acer mb-2 d-inline-block">Special Event</span>
+                  <h1 class="display-3 fw-bolder mb-3 hero-headline">
+                      Acer Innovation at IFA 2026
+                    
+                  </h1>
+                  <p class="lead mb-4 fw-normal opacity-90">
+                      Discover Acer's latest mini-AI workstation, laptops with
+                      ultra-light designs, and boundary-pushing gaming handhelds.
+                    
+                  </p>
                   <div class="d-flex flex-wrap gap-3"><a class="btn btn-hero-pill-green px-4 py-2 fw-semibold rounded-pill text-decoration-none" href="Explore.html" target="_blank">
                         Explore
-                      </a></div>
+                      </a>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- Slide 2 -->
-            <div class="carousel-item hero-bg-slide" style='background-image: url("images/Header (2).jpg")'>
-              <div class="hero-overlay"></div>
+            <div class="carousel-item hero-bg-slide" style='background-image: url("Images/Header (2).jpg")'>
+              <div class="hero-overlay">
+              </div>
               <div class="container h-100 d-flex flex-column justify-content-center py-5">
-                <div class="col-12 col-lg-7 text-white anim-content">
-                  <span class="text-uppercase fw-semibold tracking-wide text-acer mb-2 d-inline-block">Milestone</span>
-                  <h2 class="display-3 fw-bolder mb-3 hero-headline">50 Years of Breaking Barriers</h2>
-                  <p class="lead mb-4 fw-normal opacity-90">Discover 50 years of progress and the possibilities ahead as
-                      we continue shaping the future of technology.</p>
+                <div class="col-12 col-lg-7 text-white anim-content"><span class="text-uppercase fw-semibold tracking-wide text-acer mb-2 d-inline-block">Milestone</span>
+                  <h2 class="display-3 fw-bolder mb-3 hero-headline">
+                      50 Years of Breaking Barriers
+                    
+                  </h2>
+                  <p class="lead mb-4 fw-normal opacity-90">
+                      Discover 50 years of progress and the possibilities ahead as
+                      we continue shaping the future of technology.
+                    
+                  </p>
                   <div class="d-flex flex-wrap gap-3"><a class="btn btn-hero-pill-green px-4 py-2 fw-semibold rounded-pill text-decoration-none" href="Explore.html" target="_blank">
                         Explore
-                      </a></div>
+                      </a>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- Slide 3 -->
             <div class="carousel-item hero-bg-slide hero-slide-light" style='
-                  background-image: url("images/Header (3).jpg");
+                  background-image: url("Images/Header (3).jpg");
                 '>
               <div class="container h-100 d-flex flex-column justify-content-center py-5">
                 <div class="col-12 col-lg-6 anim-content">
-                  <h2 class="display-4 fw-bolder mb-1 hero-headline">Acer Swift Air 14</h2>
-                  <p class="hero-eyebrow mb-2">Made to Move</p>
-                  <div class="win11-badge d-flex align-items-center gap-2 mb-4"><i class="bi bi-microsoft win11-squares"></i> <span class="fw-semibold">Windows 11</span></div>
+                  <h2 class="display-4 fw-bolder mb-1 hero-headline">
+                      Acer Swift Air 14
+                    
+                  </h2>
+                  <p class="hero-eyebrow mb-2">Made to Move
+                  </p>
+                  <div class="win11-badge d-flex align-items-center gap-2 mb-4"><i class="bi bi-microsoft win11-squares"></i><span class="fw-semibold">Windows 11</span>
+                  </div>
                   <div class="d-flex flex-wrap gap-3"><a class="btn btn-hero-pill-white px-4 py-2 fw-semibold rounded-pill text-decoration-none shadow-sm" href="#">
                         Learn More
-                      </a> <a class="btn btn-hero-pill-green px-4 py-2 fw-semibold rounded-pill text-decoration-none" href="Explore store.html" target="_blank">
+                      </a><a class="btn btn-hero-pill-green px-4 py-2 fw-semibold rounded-pill text-decoration-none" href="Explore store.html" target="_blank">
                         Explore Store
-                      </a></div>
+                      </a>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- Slide 4 -->
-            <div class="carousel-item hero-bg-slide" style='background-image: url("images/Header (4).jpg")'>
-              <div class="hero-overlay"></div>
+            <div class="carousel-item hero-bg-slide" style='background-image: url("Images/Header (4).jpg")'>
+              <div class="hero-overlay">
+              </div>
               <div class="container h-100 d-flex flex-column justify-content-center py-5">
-                <div class="col-12 col-lg-7 text-white anim-content">
-                  <span class="text-uppercase fw-semibold tracking-wide text-acer mb-2 d-inline-block">Copilot+ PC</span>
-                  <h2 class="display-3 fw-bolder mb-3 hero-headline">Next-Gen Intelligence: Aspire AI</h2>
-                  <p class="lead mb-4 fw-normal opacity-90">Supercharge productivity and creativity with all-day battery
-                      life and integrated AI assistance.</p>
+                <div class="col-12 col-lg-7 text-white anim-content"><span class="text-uppercase fw-semibold tracking-wide text-acer mb-2 d-inline-block">Copilot+ PC</span>
+                  <h2 class="display-3 fw-bolder mb-3 hero-headline">
+                      Next-Gen Intelligence: Aspire AI
+                    
+                  </h2>
+                  <p class="lead mb-4 fw-normal opacity-90">
+                      Supercharge productivity and creativity with all-day battery
+                      life and integrated AI assistance.
+                    
+                  </p>
                   <div class="d-flex flex-wrap gap-3"><a class="btn btn-hero-pill-green px-4 py-2 fw-semibold rounded-pill text-decoration-none" href="Discover AI.html" target="_blank">
                         Discover AI
-                      </a></div>
+                      </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Custom Capsule Carousel Indicators -->
-          <div class="carousel-indicators acer-slider-controls bg-dark bg-opacity-75 rounded-pill px-3 py-1"><button aria-current="true" aria-label="Slide 1" class="active slider-bar-btn border-0" data-bs-slide-to="0" data-bs-target="#heroCarousel" type="button"></button> <button aria-label="Slide 2" class="slider-dot-btn border-0" data-bs-slide-to="1" data-bs-target="#heroCarousel" type="button"></button> <button aria-label="Slide 3" class="slider-dot-btn border-0" data-bs-slide-to="2" data-bs-target="#heroCarousel" type="button"></button> <button aria-label="Slide 4" class="slider-dot-btn border-0" data-bs-slide-to="3" data-bs-target="#heroCarousel" type="button"></button></div>
+          <div class="carousel-indicators acer-slider-controls bg-dark bg-opacity-75 rounded-pill px-3 py-1"><button aria-current="true" aria-label="Slide 1" class="active slider-bar-btn border-0" data-bs-slide-to="0" data-bs-target="#heroCarousel" type="button"></button><button aria-label="Slide 2" class="slider-dot-btn border-0" data-bs-slide-to="1" data-bs-target="#heroCarousel" type="button"></button><button aria-label="Slide 3" class="slider-dot-btn border-0" data-bs-slide-to="2" data-bs-target="#heroCarousel" type="button"></button><button aria-label="Slide 4" class="slider-dot-btn border-0" data-bs-slide-to="3" data-bs-target="#heroCarousel" type="button"></button>
+          </div>
         </div>
       </section>
       <!-- 5. BROWSE POPULAR CATEGORIES -->
       <section aria-labelledby="categoriesHeading" class="py-5 bg-white border-bottom">
         <div class="container py-4">
-          <h2 class="text-center fw-bold mb-5 popular-categories-title" id="categoriesHeading">Browse Popular Categories</h2>
+          <h2 class="text-center fw-bold mb-5 popular-categories-title" id="categoriesHeading">
+      Browse Popular Categories
+    
+          </h2>
           <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 text-center justify-content-center categories-scroll-row">
             <!-- Card 1 -->
-            <div class="col">
-              <a class="text-decoration-none category-item-card d-flex flex-column align-items-center h-100" href="Laptops.html" target="_blank">
-                <div class="category-img-container mb-3"><img alt="Acer Laptops" class="img-fluid category-img" loading="lazy" src="images/laptops(1).jpg"></div>
-                <span class="category-label">Laptops</span>
-              </a>
+            <div class="col"><a class="text-decoration-none category-item-card d-flex flex-column align-items-center h-100" href="Laptops.html" target="_blank">
+              <div class="category-img-container mb-3"><img alt="Acer Laptops" class="img-fluid category-img" loading="lazy" src="Images/laptops(1).jpg">
+              </div>
+<span class="category-label">Laptops</span></a>
             </div>
             <!-- Card 2 -->
-            <div class="col">
-              <a class="text-decoration-none category-item-card d-flex flex-column align-items-center h-100" href="Desktops.html" target="_blank">
-                <div class="category-img-container mb-3"><img alt="Acer Desktops" class="img-fluid category-img" loading="lazy" src="images/Desktops(2).jpg"></div>
-                <span class="category-label">Desktops</span>
-              </a>
+            <div class="col"><a class="text-decoration-none category-item-card d-flex flex-column align-items-center h-100" href="Desktops.html" target="_blank">
+              <div class="category-img-container mb-3"><img alt="Acer Desktops" class="img-fluid category-img" loading="lazy" src="Images/Desktops(2).jpg">
+              </div>
+<span class="category-label">Desktops</span></a>
             </div>
             <!-- Card 3 -->
-            <div class="col">
-              <a class="text-decoration-none category-item-card d-flex flex-column align-items-center h-100" href="Monitors.html" target="_blank">
-                <div class="category-img-container mb-3"><img alt="Acer Monitors" class="img-fluid category-img" loading="lazy" src="images/Monitors(3).jpg"></div>
-                <span class="category-label">Monitors</span>
-              </a>
+            <div class="col"><a class="text-decoration-none category-item-card d-flex flex-column align-items-center h-100" href="Monitors.html" target="_blank">
+              <div class="category-img-container mb-3"><img alt="Acer Monitors" class="img-fluid category-img" loading="lazy" src="Images/Monitors(3).jpg">
+              </div>
+<span class="category-label">Monitors</span></a>
             </div>
             <!-- Card 4 -->
-            <div class="col">
-              <a class="text-decoration-none category-item-card d-flex flex-column align-items-center h-100" href="Gaming.html" target="_blank">
-                <div class="category-img-container mb-3"><img alt="Acer Gaming" class="img-fluid category-img" loading="lazy" src="images/acer chromebooks(4).jpg"></div>
-                <span class="category-label">Gaming</span>
-              </a>
+            <div class="col"><a class="text-decoration-none category-item-card d-flex flex-column align-items-center h-100" href="Gaming.html" target="_blank">
+              <div class="category-img-container mb-3"><img alt="Acer Gaming" class="img-fluid category-img" loading="lazy" src="Images/acer chromebooks(4).jpg">
+              </div>
+<span class="category-label">Gaming</span></a>
             </div>
             <!-- Card 5 -->
-            <div class="col">
-              <a class="text-decoration-none category-item-card d-flex flex-column align-items-center h-100" href="Accessories.html" target="_blank">
-                <div class="category-img-container mb-3"><img alt="Acer Accessories" class="img-fluid category-img" loading="lazy" src="images/Graphics Cards(5).jpg"></div>
-                <span class="category-label">Accessories</span>
-              </a>
+            <div class="col"><a class="text-decoration-none category-item-card d-flex flex-column align-items-center h-100" href="Accessories.html" target="_blank">
+              <div class="category-img-container mb-3"><img alt="Acer Accessories" class="img-fluid category-img" loading="lazy" src="Images/Graphics Cards(5).jpg">
+              </div>
+<span class="category-label">Accessories</span></a>
             </div>
           </div>
         </div>
@@ -810,29 +704,36 @@
       <!-- 6. EXCLUSIVE OFFERS & VALUE PICKS -->
       <section aria-labelledby="exclusiveOffersHeading" class="py-5 bg-light">
         <div class="container py-4">
-          <h2 class="text-center fw-bold mb-5 exclusive-offers-title" id="exclusiveOffersHeading">Exclusive Offers &amp; Value Picks</h2>
+          <h2 class="text-center fw-bold mb-5 exclusive-offers-title" id="exclusiveOffersHeading">
+      Exclusive Offers &amp; Value Picks
+    
+          </h2>
           <div class="row g-4">
             <!-- Card 1: Massive Monitor Savings -->
             <div class="col-12 col-lg-6">
-              <div class="exclusive-offer-card rounded-4 p-5 position-relative overflow-hidden shadow-sm d-flex flex-column justify-content-end" style='background-image: url("Images/Exclusive (1).jpg");'>
-                <a aria-label="Massive Monitor Savings" class="position-absolute top-0 start-0 w-100 h-100 exclusive-card-full-link" href="https://store.acer.com/en-us/sale/monitor-sale" target="_blank"></a>
-                <div class="position-absolute top-0 start-0 w-100 h-100 exclusive-offer-overlay"></div>
+              <div class="exclusive-offer-card rounded-4 p-5 position-relative overflow-hidden shadow-sm d-flex flex-column justify-content-end" style='background-image: url("Images/Exclusive (1).jpg");'><a aria-label="Massive Monitor Savings" class="position-absolute top-0 start-0 w-100 h-100 exclusive-card-full-link" href="https://store.acer.com/en-us/sale/monitor-sale" target="_blank"></a>
+                <div class="position-absolute top-0 start-0 w-100 h-100 exclusive-offer-overlay">
+                </div>
                 <div class="exclusive-offer-content position-relative text-center">
-                  <h3 class="fw-bold mb-3 exclusive-offer-headline">Massive Monitor Savings</h3>
-                  <p class="mb-4 exclusive-offer-desc">Shop our huge selection of monitor deals!</p>
-                  <a class="fw-bold text-decoration-none exclusive-offer-link" href="https://store.acer.com/en-us/sale/monitor-sale" target="_blank">Shop Now</a>
+                  <h3 class="fw-bold mb-3 exclusive-offer-headline">Massive Monitor Savings
+                  </h3>
+                  <p class="mb-4 exclusive-offer-desc">Shop our huge selection of monitor deals!
+                  </p>
+<a class="fw-bold text-decoration-none exclusive-offer-link" href="https://store.acer.com/en-us/sale/monitor-sale" target="_blank">Shop Now</a>
                 </div>
               </div>
             </div>
             <!-- Card 2: Shop Acer Value Picks -->
             <div class="col-12 col-lg-6">
-              <div class="exclusive-offer-card rounded-4 p-5 position-relative overflow-hidden shadow-sm d-flex flex-column justify-content-end" style='background-image: url("Images/Exclusive (2).jpg");'>
-                <a aria-label="Shop Acer Value Picks" class="position-absolute top-0 start-0 w-100 h-100 exclusive-card-full-link" href="https://store.acer.com/en-us/acer-value-picks" target="_blank"></a>
-                <div class="position-absolute top-0 start-0 w-100 h-100 exclusive-offer-overlay"></div>
+              <div class="exclusive-offer-card rounded-4 p-5 position-relative overflow-hidden shadow-sm d-flex flex-column justify-content-end" style='background-image: url("Images/Exclusive (2).jpg");'><a aria-label="Shop Acer Value Picks" class="position-absolute top-0 start-0 w-100 h-100 exclusive-card-full-link" href="https://store.acer.com/en-us/acer-value-picks" target="_blank"></a>
+                <div class="position-absolute top-0 start-0 w-100 h-100 exclusive-offer-overlay">
+                </div>
                 <div class="exclusive-offer-content position-relative text-center">
-                  <h3 class="fw-bold mb-3 exclusive-offer-headline">Shop Acer Value Picks</h3>
-                  <p class="mb-4 exclusive-offer-desc">Discover exceptional everyday pricing on exclusive laptops and monitors.</p>
-                  <a class="fw-bold text-decoration-none exclusive-offer-link" href="https://store.acer.com/en-us/acer-value-picks" target="_blank">Shop Now</a>
+                  <h3 class="fw-bold mb-3 exclusive-offer-headline">Shop Acer Value Picks
+                  </h3>
+                  <p class="mb-4 exclusive-offer-desc">Discover exceptional everyday pricing on exclusive laptops and monitors.
+                  </p>
+<a class="fw-bold text-decoration-none exclusive-offer-link" href="https://store.acer.com/en-us/acer-value-picks" target="_blank">Shop Now</a>
                 </div>
               </div>
             </div>
@@ -842,7 +743,10 @@
       <!-- 7. INSIGHTS AND INNOVATIONS -->
       <section class="insights-section py-5 bg-white" id="insights">
         <div class="container py-4">
-          <h2 class="text-center fw-bold mb-5 insights-title">Insights and Innovations</h2>
+          <h2 class="text-center fw-bold mb-5 insights-title">
+        Insights and Innovations
+      
+          </h2>
           <!-- نسخه موبایل و نیم‌صفحه: ۵ اسلاید مستقل + نوار خطی کشیده‌تر یکپارچه (بدون فلش) -->
           <div class="carousel slide insights-carousel d-lg-none" data-bs-ride="false" data-bs-wrap="false" id="insightsCarouselMobile">
             <div class="carousel-inner">
@@ -850,13 +754,21 @@
               <div class="carousel-item active">
                 <div class="col-12">
                   <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden insight-card">
-                    <div class="insight-img-wrapper"><img alt="Computer Science Student Laptop Guide" class="card-img-top insight-card-img" loading="lazy" src="images/1.computer-science-student-laptop-guide-for-2026.jpg"></div>
+                    <div class="insight-img-wrapper"><img alt="Computer Science Student Laptop Guide" class="card-img-top insight-card-img" loading="lazy" src="Images/1.computer-science-student-laptop-guide-for-2026.jpg">
+                    </div>
                     <div class="card-body p-4 d-flex flex-column">
-                      <h3 class="card-title fw-bold insight-card-title mb-3">Computer Science Student Laptop Guide for 2026</h3>
-                      <p class="card-text text-muted flex-grow-1 insight-card-text">Explore essential hardware specifications, processing power requirements, and key features needed for coding and software development...</p>
+                      <h3 class="card-title fw-bold insight-card-title mb-3">
+                    Computer Science Student Laptop Guide for 2026
+                  
+                      </h3>
+                      <p class="card-text text-muted flex-grow-1 insight-card-text">
+                    Explore essential hardware specifications, processing power requirements, and key features needed for coding and software development...
+                  
+                      </p>
                       <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-cs-guide.html" target="_blank">
                       Read More
-                    </a></div>
+                    </a>
+                      </div>
                     </div>
                   </article>
                 </div>
@@ -865,13 +777,21 @@
               <div class="carousel-item">
                 <div class="col-12">
                   <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden insight-card">
-                    <div class="insight-img-wrapper"><img alt="Recommended Laptops for Engineering Students" class="card-img-top insight-card-img" loading="lazy" src="images/2.recommended-laptops-for-engineering-students.jpg"></div>
+                    <div class="insight-img-wrapper"><img alt="Recommended Laptops for Engineering Students" class="card-img-top insight-card-img" loading="lazy" src="Images/2.recommended-laptops-for-engineering-students.jpg">
+                    </div>
                     <div class="card-body p-4 d-flex flex-column">
-                      <h3 class="card-title fw-bold insight-card-title mb-3">Recommended Laptops for Engineering Students</h3>
-                      <p class="card-text text-muted flex-grow-1 insight-card-text">Discover performance-focused machines capable of handling demanding CAD tools, simulations, and rigorous computational workloads...</p>
+                      <h3 class="card-title fw-bold insight-card-title mb-3">
+                    Recommended Laptops for Engineering Students
+                  
+                      </h3>
+                      <p class="card-text text-muted flex-grow-1 insight-card-text">
+                    Discover performance-focused machines capable of handling demanding CAD tools, simulations, and rigorous computational workloads...
+                  
+                      </p>
                       <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-engineering-laptops.html" target="_blank">
                       Read More
-                    </a></div>
+                    </a>
+                      </div>
                     </div>
                   </article>
                 </div>
@@ -880,13 +800,21 @@
               <div class="carousel-item">
                 <div class="col-12">
                   <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden insight-card">
-                    <div class="insight-img-wrapper"><img alt="Best Laptop Specs for College in 2026" class="card-img-top insight-card-img" loading="lazy" src="images/3.best-laptop-specs-for-collegeuniversity-in-2026.jpg"></div>
+                    <div class="insight-img-wrapper"><img alt="Best Laptop Specs for College in 2026" class="card-img-top insight-card-img" loading="lazy" src="Images/3.best-laptop-specs-for-collegeuniversity-in-2026.jpg">
+                    </div>
                     <div class="card-body p-4 d-flex flex-column">
-                      <h3 class="card-title fw-bold insight-card-title mb-3">Best Laptop Specs for College/University in 2026</h3>
-                      <p class="card-text text-muted flex-grow-1 insight-card-text">A comprehensive breakdown of RAM, storage options, battery efficiency, and processing benchmarks for academic success...</p>
+                      <h3 class="card-title fw-bold insight-card-title mb-3">
+                    Best Laptop Specs for College/University in 2026
+                  
+                      </h3>
+                      <p class="card-text text-muted flex-grow-1 insight-card-text">
+                    A comprehensive breakdown of RAM, storage options, battery efficiency, and processing benchmarks for academic success...
+                  
+                      </p>
                       <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-college-specs.html" target="_blank">
                       Read More
-                    </a></div>
+                    </a>
+                      </div>
                     </div>
                   </article>
                 </div>
@@ -895,13 +823,21 @@
               <div class="carousel-item">
                 <div class="col-12">
                   <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden insight-card">
-                    <div class="insight-img-wrapper"><img alt="Introducing Tech Glasses GR0 and GI0" class="card-img-top insight-card-img" loading="lazy" src="images/4.introducing-tech-glasses-by-acer-the-ar-glasses-gr0-and-ai-glasses-gi0.jpg"></div>
+                    <div class="insight-img-wrapper"><img alt="Introducing Tech Glasses GR0 and GI0" class="card-img-top insight-card-img" loading="lazy" src="Images/4.introducing-tech-glasses-by-acer-the-ar-glasses-gr0-and-ai-glasses-gi0.jpg">
+                    </div>
                     <div class="card-body p-4 d-flex flex-column">
-                      <h3 class="card-title fw-bold insight-card-title mb-3">Introducing Tech Glasses by Acer: AR Glasses GR0 and AI Glasses GI0</h3>
-                      <p class="card-text text-muted flex-grow-1 insight-card-text">Experience the next generation of wearable tech featuring augmented reality and real-time intelligent vision assistance...</p>
+                      <h3 class="card-title fw-bold insight-card-title mb-3">
+                    Introducing Tech Glasses by Acer: AR Glasses GR0 and AI Glasses GI0
+                  
+                      </h3>
+                      <p class="card-text text-muted flex-grow-1 insight-card-text">
+                    Experience the next generation of wearable tech featuring augmented reality and real-time intelligent vision assistance...
+                  
+                      </p>
                       <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-tech-glasses.html" target="_blank">
                       Read More
-                    </a></div>
+                    </a>
+                      </div>
                     </div>
                   </article>
                 </div>
@@ -910,20 +846,29 @@
               <div class="carousel-item">
                 <div class="col-12">
                   <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden insight-card">
-                    <div class="insight-img-wrapper"><img alt="How Are Computer Screens Measured" class="card-img-top insight-card-img" loading="lazy" src="images/5.how-are-computer-screens-measured.jpg"></div>
+                    <div class="insight-img-wrapper"><img alt="How Are Computer Screens Measured" class="card-img-top insight-card-img" loading="lazy" src="Images/5.how-are-computer-screens-measured.jpg">
+                    </div>
                     <div class="card-body p-4 d-flex flex-column">
-                      <h3 class="card-title fw-bold insight-card-title mb-3">How Are Computer Screens Measured?</h3>
-                      <p class="card-text text-muted flex-grow-1 insight-card-text">Understand diagonal dimensions, aspect ratios, and how panel sizing affects your daily viewing and multitasking comfort...</p>
+                      <h3 class="card-title fw-bold insight-card-title mb-3">
+                    How Are Computer Screens Measured?
+                  
+                      </h3>
+                      <p class="card-text text-muted flex-grow-1 insight-card-text">
+                    Understand diagonal dimensions, aspect ratios, and how panel sizing affects your daily viewing and multitasking comfort...
+                  
+                      </p>
                       <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-screens-measured.html" target="_blank">
                       Read More
-                    </a></div>
+                    </a>
+                      </div>
                     </div>
                   </article>
                 </div>
               </div>
             </div>
             <!-- نوار خطی سراسری ۵ تکه بلندتر در پایین کارت‌ها -->
-            <div class="carousel-indicators insight-progress-indicators"><button type="button" data-bs-target="#insightsCarouselMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> <button type="button" data-bs-target="#insightsCarouselMobile" data-bs-slide-to="1" aria-label="Slide 2"></button> <button type="button" data-bs-target="#insightsCarouselMobile" data-bs-slide-to="2" aria-label="Slide 3"></button> <button type="button" data-bs-target="#insightsCarouselMobile" data-bs-slide-to="3" aria-label="Slide 4"></button> <button type="button" data-bs-target="#insightsCarouselMobile" data-bs-slide-to="4" aria-label="Slide 5"></button></div>
+            <div class="carousel-indicators insight-progress-indicators"><button type="button" data-bs-target="#insightsCarouselMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button><button type="button" data-bs-target="#insightsCarouselMobile" data-bs-slide-to="1" aria-label="Slide 2"></button><button type="button" data-bs-target="#insightsCarouselMobile" data-bs-slide-to="2" aria-label="Slide 3"></button><button type="button" data-bs-target="#insightsCarouselMobile" data-bs-slide-to="3" aria-label="Slide 4"></button><button type="button" data-bs-target="#insightsCarouselMobile" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
           </div>
           <!-- نسخه دسکتاپ: ساختار ۳ اسلایدی دست نخورده با فلش‌های چپ و راست -->
           <div class="carousel slide insights-carousel d-none d-lg-block" data-bs-ride="false" data-bs-wrap="false" id="insightsCarousel">
@@ -933,31 +878,43 @@
                 <div class="row g-4">
                   <div class="col-lg-4">
                     <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden insight-card">
-                      <div class="insight-img-wrapper"><img alt="Computer Science Student Laptop Guide" class="card-img-top insight-card-img" loading="lazy" src="images/1.computer-science-student-laptop-guide-for-2026.jpg"></div>
+                      <div class="insight-img-wrapper"><img alt="Computer Science Student Laptop Guide" class="card-img-top insight-card-img" loading="lazy" src="Images/1.computer-science-student-laptop-guide-for-2026.jpg">
+                      </div>
                       <div class="card-body p-4 d-flex flex-column">
-                        <h3 class="card-title fw-bold insight-card-title mb-3">Computer Science Student Laptop Guide for 2026</h3>
-                        <p class="card-text text-muted flex-grow-1 insight-card-text">Explore essential hardware specifications, processing power requirements, and key features needed for coding and software development...</p>
-                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-cs-guide.html" target="_blank">Read More</a></div>
+                        <h3 class="card-title fw-bold insight-card-title mb-3">Computer Science Student Laptop Guide for 2026
+                        </h3>
+                        <p class="card-text text-muted flex-grow-1 insight-card-text">Explore essential hardware specifications, processing power requirements, and key features needed for coding and software development...
+                        </p>
+                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-cs-guide.html" target="_blank">Read More</a>
+                        </div>
                       </div>
                     </article>
                   </div>
                   <div class="col-lg-4">
                     <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden insight-card">
-                      <div class="insight-img-wrapper"><img alt="Recommended Laptops for Engineering Students" class="card-img-top insight-card-img" loading="lazy" src="images/2.recommended-laptops-for-engineering-students.jpg"></div>
+                      <div class="insight-img-wrapper"><img alt="Recommended Laptops for Engineering Students" class="card-img-top insight-card-img" loading="lazy" src="Images/2.recommended-laptops-for-engineering-students.jpg">
+                      </div>
                       <div class="card-body p-4 d-flex flex-column">
-                        <h3 class="card-title fw-bold insight-card-title mb-3">Recommended Laptops for Engineering Students</h3>
-                        <p class="card-text text-muted flex-grow-1 insight-card-text">Discover performance-focused machines capable of handling demanding CAD tools, simulations, and rigorous computational workloads...</p>
-                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-engineering-laptops.html" target="_blank">Read More</a></div>
+                        <h3 class="card-title fw-bold insight-card-title mb-3">Recommended Laptops for Engineering Students
+                        </h3>
+                        <p class="card-text text-muted flex-grow-1 insight-card-text">Discover performance-focused machines capable of handling demanding CAD tools, simulations, and rigorous computational workloads...
+                        </p>
+                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-engineering-laptops.html" target="_blank">Read More</a>
+                        </div>
                       </div>
                     </article>
                   </div>
                   <div class="col-lg-4">
                     <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden insight-card">
-                      <div class="insight-img-wrapper"><img alt="Best Laptop Specs for College in 2026" class="card-img-top insight-card-img" loading="lazy" src="images/3.best-laptop-specs-for-collegeuniversity-in-2026.jpg"></div>
+                      <div class="insight-img-wrapper"><img alt="Best Laptop Specs for College in 2026" class="card-img-top insight-card-img" loading="lazy" src="Images/3.best-laptop-specs-for-collegeuniversity-in-2026.jpg">
+                      </div>
                       <div class="card-body p-4 d-flex flex-column">
-                        <h3 class="card-title fw-bold insight-card-title mb-3">Best Laptop Specs for College/University in 2026</h3>
-                        <p class="card-text text-muted flex-grow-1 insight-card-text">A comprehensive breakdown of RAM, storage options, battery efficiency, and processing benchmarks for academic success...</p>
-                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-college-specs.html" target="_blank">Read More</a></div>
+                        <h3 class="card-title fw-bold insight-card-title mb-3">Best Laptop Specs for College/University in 2026
+                        </h3>
+                        <p class="card-text text-muted flex-grow-1 insight-card-text">A comprehensive breakdown of RAM, storage options, battery efficiency, and processing benchmarks for academic success...
+                        </p>
+                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-college-specs.html" target="_blank">Read More</a>
+                        </div>
                       </div>
                     </article>
                   </div>
@@ -968,31 +925,43 @@
                 <div class="row g-4">
                   <div class="col-lg-4">
                     <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden insight-card">
-                      <div class="insight-img-wrapper"><img alt="Recommended Laptops for Engineering Students" class="card-img-top insight-card-img" loading="lazy" src="images/2.recommended-laptops-for-engineering-students.jpg"></div>
+                      <div class="insight-img-wrapper"><img alt="Recommended Laptops for Engineering Students" class="card-img-top insight-card-img" loading="lazy" src="Images/2.recommended-laptops-for-engineering-students.jpg">
+                      </div>
                       <div class="card-body p-4 d-flex flex-column">
-                        <h3 class="card-title fw-bold insight-card-title mb-3">Recommended Laptops for Engineering Students</h3>
-                        <p class="card-text text-muted flex-grow-1 insight-card-text">Discover performance-focused machines capable of handling demanding CAD tools, simulations, and rigorous computational workloads...</p>
-                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-engineering-laptops.html" target="_blank">Read More</a></div>
+                        <h3 class="card-title fw-bold insight-card-title mb-3">Recommended Laptops for Engineering Students
+                        </h3>
+                        <p class="card-text text-muted flex-grow-1 insight-card-text">Discover performance-focused machines capable of handling demanding CAD tools, simulations, and rigorous computational workloads...
+                        </p>
+                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-engineering-laptops.html" target="_blank">Read More</a>
+                        </div>
                       </div>
                     </article>
                   </div>
                   <div class="col-lg-4">
                     <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden insight-card">
-                      <div class="insight-img-wrapper"><img alt="Best Laptop Specs for College in 2026" class="card-img-top insight-card-img" loading="lazy" src="images/3.best-laptop-specs-for-collegeuniversity-in-2026.jpg"></div>
+                      <div class="insight-img-wrapper"><img alt="Best Laptop Specs for College in 2026" class="card-img-top insight-card-img" loading="lazy" src="Images/3.best-laptop-specs-for-collegeuniversity-in-2026.jpg">
+                      </div>
                       <div class="card-body p-4 d-flex flex-column">
-                        <h3 class="card-title fw-bold insight-card-title mb-3">Best Laptop Specs for College/University in 2026</h3>
-                        <p class="card-text text-muted flex-grow-1 insight-card-text">A comprehensive breakdown of RAM, storage options, battery efficiency, and processing benchmarks for academic success...</p>
-                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-college-specs.html" target="_blank">Read More</a></div>
+                        <h3 class="card-title fw-bold insight-card-title mb-3">Best Laptop Specs for College/University in 2026
+                        </h3>
+                        <p class="card-text text-muted flex-grow-1 insight-card-text">A comprehensive breakdown of RAM, storage options, battery efficiency, and processing benchmarks for academic success...
+                        </p>
+                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-college-specs.html" target="_blank">Read More</a>
+                        </div>
                       </div>
                     </article>
                   </div>
                   <div class="col-lg-4">
                     <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden insight-card">
-                      <div class="insight-img-wrapper"><img alt="Introducing Tech Glasses GR0 and GI0" class="card-img-top insight-card-img" loading="lazy" src="images/4.introducing-tech-glasses-by-acer-the-ar-glasses-gr0-and-ai-glasses-gi0.jpg"></div>
+                      <div class="insight-img-wrapper"><img alt="Introducing Tech Glasses GR0 and GI0" class="card-img-top insight-card-img" loading="lazy" src="Images/4.introducing-tech-glasses-by-acer-the-ar-glasses-gr0-and-ai-glasses-gi0.jpg">
+                      </div>
                       <div class="card-body p-4 d-flex flex-column">
-                        <h3 class="card-title fw-bold insight-card-title mb-3">Introducing Tech Glasses by Acer: AR Glasses GR0 and AI Glasses GI0</h3>
-                        <p class="card-text text-muted flex-grow-1 insight-card-text">Experience the next generation of wearable tech featuring augmented reality and real-time intelligent vision assistance...</p>
-                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-tech-glasses.html" target="_blank">Read More</a></div>
+                        <h3 class="card-title fw-bold insight-card-title mb-3">Introducing Tech Glasses by Acer: AR Glasses GR0 and AI Glasses GI0
+                        </h3>
+                        <p class="card-text text-muted flex-grow-1 insight-card-text">Experience the next generation of wearable tech featuring augmented reality and real-time intelligent vision assistance...
+                        </p>
+                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-tech-glasses.html" target="_blank">Read More</a>
+                        </div>
                       </div>
                     </article>
                   </div>
@@ -1003,31 +972,43 @@
                 <div class="row g-4">
                   <div class="col-lg-4">
                     <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden insight-card">
-                      <div class="insight-img-wrapper"><img alt="Best Laptop Specs for College in 2026" class="card-img-top insight-card-img" loading="lazy" src="images/3.best-laptop-specs-for-collegeuniversity-in-2026.jpg"></div>
+                      <div class="insight-img-wrapper"><img alt="Best Laptop Specs for College in 2026" class="card-img-top insight-card-img" loading="lazy" src="Images/3.best-laptop-specs-for-collegeuniversity-in-2026.jpg">
+                      </div>
                       <div class="card-body p-4 d-flex flex-column">
-                        <h3 class="card-title fw-bold insight-card-title mb-3">Best Laptop Specs for College/University in 2026</h3>
-                        <p class="card-text text-muted flex-grow-1 insight-card-text">A comprehensive breakdown of RAM, storage options, battery efficiency, and processing benchmarks for academic success...</p>
-                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-college-specs.html" target="_blank">Read More</a></div>
+                        <h3 class="card-title fw-bold insight-card-title mb-3">Best Laptop Specs for College/University in 2026
+                        </h3>
+                        <p class="card-text text-muted flex-grow-1 insight-card-text">A comprehensive breakdown of RAM, storage options, battery efficiency, and processing benchmarks for academic success...
+                        </p>
+                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-college-specs.html" target="_blank">Read More</a>
+                        </div>
                       </div>
                     </article>
                   </div>
                   <div class="col-lg-4">
                     <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden insight-card">
-                      <div class="insight-img-wrapper"><img alt="Introducing Tech Glasses GR0 and GI0" class="card-img-top insight-card-img" loading="lazy" src="images/4.introducing-tech-glasses-by-acer-the-ar-glasses-gr0-and-ai-glasses-gi0.jpg"></div>
+                      <div class="insight-img-wrapper"><img alt="Introducing Tech Glasses GR0 and GI0" class="card-img-top insight-card-img" loading="lazy" src="Images/4.introducing-tech-glasses-by-acer-the-ar-glasses-gr0-and-ai-glasses-gi0.jpg">
+                      </div>
                       <div class="card-body p-4 d-flex flex-column">
-                        <h3 class="card-title fw-bold insight-card-title mb-3">Introducing Tech Glasses by Acer: AR Glasses GR0 and AI Glasses GI0</h3>
-                        <p class="card-text text-muted flex-grow-1 insight-card-text">Experience the next generation of wearable tech featuring augmented reality and real-time intelligent vision assistance...</p>
-                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-tech-glasses.html" target="_blank">Read More</a></div>
+                        <h3 class="card-title fw-bold insight-card-title mb-3">Introducing Tech Glasses by Acer: AR Glasses GR0 and AI Glasses GI0
+                        </h3>
+                        <p class="card-text text-muted flex-grow-1 insight-card-text">Experience the next generation of wearable tech featuring augmented reality and real-time intelligent vision assistance...
+                        </p>
+                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-tech-glasses.html" target="_blank">Read More</a>
+                        </div>
                       </div>
                     </article>
                   </div>
                   <div class="col-lg-4">
                     <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden insight-card">
-                      <div class="insight-img-wrapper"><img alt="How Are Computer Screens Measured" class="card-img-top insight-card-img" loading="lazy" src="images/5.how-are-computer-screens-measured.jpg"></div>
+                      <div class="insight-img-wrapper"><img alt="How Are Computer Screens Measured" class="card-img-top insight-card-img" loading="lazy" src="Images/5.how-are-computer-screens-measured.jpg">
+                      </div>
                       <div class="card-body p-4 d-flex flex-column">
-                        <h3 class="card-title fw-bold insight-card-title mb-3">How Are Computer Screens Measured?</h3>
-                        <p class="card-text text-muted flex-grow-1 insight-card-text">Understand diagonal dimensions, aspect ratios, and how panel sizing affects your daily viewing and multitasking comfort...</p>
-                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-screens-measured.html" target="_blank">Read More</a></div>
+                        <h3 class="card-title fw-bold insight-card-title mb-3">How Are Computer Screens Measured?
+                        </h3>
+                        <p class="card-text text-muted flex-grow-1 insight-card-text">Understand diagonal dimensions, aspect ratios, and how panel sizing affects your daily viewing and multitasking comfort...
+                        </p>
+                        <div class="pt-3 mt-auto"><a class="insight-read-more fw-semibold" href="article-screens-measured.html" target="_blank">Read More</a>
+                        </div>
                       </div>
                     </article>
                   </div>
@@ -1035,67 +1016,101 @@
               </div>
             </div>
             <!-- فلش‌های دسکتاپ -->
-            <button aria-label="Previous insight" class="carousel-control-prev insight-prev-btn" data-bs-slide="prev" data-bs-target="#insightsCarousel" type="button"><span aria-hidden="true" class="carousel-control-prev-icon insight-prev-icon"></span></button>
-            <button aria-label="Next insight" class="carousel-control-next insight-next-btn" data-bs-slide="next" data-bs-target="#insightsCarousel" type="button"><span aria-hidden="true" class="carousel-control-next-icon insight-next-icon"></span></button>
+<button aria-label="Previous insight" class="carousel-control-prev insight-prev-btn" data-bs-slide="prev" data-bs-target="#insightsCarousel" type="button"><span aria-hidden="true" class="carousel-control-prev-icon insight-prev-icon"></span></button><button aria-label="Next insight" class="carousel-control-next insight-next-btn" data-bs-slide="next" data-bs-target="#insightsCarousel" type="button"><span aria-hidden="true" class="carousel-control-next-icon insight-next-icon"></span></button>
           </div>
         </div>
       </section>
       <!-- 8. DISCOVER MORE WITH ACER -->
       <section aria-labelledby="discoverMoreHeading" class="discover-section py-5 bg-white border-top" id="discover-more">
         <div class="container py-4">
-          <h2 class="text-center fw-bold mb-5 discover-main-title" id="discoverMoreHeading">Discover More with Acer</h2>
+          <h2 class="text-center fw-bold mb-5 discover-main-title" id="discoverMoreHeading">
+              Discover More with Acer
+            
+          </h2>
           <div class="row g-4">
             <!-- Item 1 -->
             <div class="col-12 col-sm-6 col-lg-3">
               <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden discover-card">
-                <div class="discover-img-wrapper"><img alt="50 Years of Breaking Barriers" class="card-img-top discover-card-img" loading="lazy" src="images/Discover with acer (1).jpg"/></div>
+                <div class="discover-img-wrapper"><img alt="50 Years of Breaking Barriers" class="card-img-top discover-card-img" loading="lazy" src="Images/Discover with acer (1).jpg"/>
+                </div>
                 <div class="card-body p-4 d-flex flex-column">
-                  <h3 class="card-title fw-bold discover-card-title mb-3">50 Years of Breaking Barriers</h3>
-                  <p class="card-text text-muted flex-grow-1 discover-card-text">Discover 50 years of progress and the possibilities ahead...</p>
+                  <h3 class="card-title fw-bold discover-card-title mb-3">
+                      50 Years of Breaking Barriers
+                    
+                  </h3>
+                  <p class="card-text text-muted flex-grow-1 discover-card-text">
+                      Discover 50 years of progress and the possibilities ahead...
+                    
+                  </p>
                   <div class="pt-3 mt-auto"><a class="discover-cta-link fw-semibold" href="https://www.acer.com/50years" rel="noopener noreferrer" target="_blank">
                         Explore
-                      </a></div>
+                      </a>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- Item 2 -->
             <div class="col-12 col-sm-6 col-lg-3">
               <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden discover-card">
-                <div class="discover-img-wrapper"><img alt="PC Game Pass" class="card-img-top discover-card-img" loading="lazy" src="images/Discover with acer (2).jpg"/></div>
+                <div class="discover-img-wrapper"><img alt="PC Game Pass" class="card-img-top discover-card-img" loading="lazy" src="Images/Discover with acer (2).jpg"/>
+                </div>
                 <div class="card-body p-4 d-flex flex-column">
-                  <h3 class="card-title fw-bold discover-card-title mb-3">PC Game Pass</h3>
-                  <p class="card-text text-muted flex-grow-1 discover-card-text">Three-month trial included with your new Predator or Acer
-                      Nitro Gaming Laptop...</p>
+                  <h3 class="card-title fw-bold discover-card-title mb-3">
+                      PC Game Pass
+                    
+                  </h3>
+                  <p class="card-text text-muted flex-grow-1 discover-card-text">
+                      Three-month trial included with your new Predator or Acer
+                      Nitro Gaming Laptop...
+                    
+                  </p>
                   <div class="pt-3 mt-auto"><a class="discover-cta-link fw-semibold" href="https://www.acer.com/gamepass" rel="noopener noreferrer" target="_blank">
                         Learn More
-                      </a></div>
+                      </a>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- Item 3 -->
             <div class="col-12 col-sm-6 col-lg-3">
               <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden discover-card">
-                <div class="discover-img-wrapper"><img alt="Acer Corner" class="card-img-top discover-card-img" loading="lazy" src="images/Discover with acer (3).jpg"/></div>
+                <div class="discover-img-wrapper"><img alt="Acer Corner" class="card-img-top discover-card-img" loading="lazy" src="Images/Discover with acer (3).jpg"/>
+                </div>
                 <div class="card-body p-4 d-flex flex-column">
-                  <h3 class="card-title fw-bold discover-card-title mb-3">Acer Corner</h3>
-                  <p class="card-text text-muted flex-grow-1 discover-card-text">The Official Acer Blog...</p>
+                  <h3 class="card-title fw-bold discover-card-title mb-3">
+                      Acer Corner
+                    
+                  </h3>
+                  <p class="card-text text-muted flex-grow-1 discover-card-text">
+                      The Official Acer Blog...
+                    
+                  </p>
                   <div class="pt-3 mt-auto"><a class="discover-cta-link fw-semibold" href="https://blog.acer.com" rel="noopener noreferrer" target="_blank">
                         Learn More
-                      </a></div>
+                      </a>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- Item 4 -->
             <div class="col-12 col-sm-6 col-lg-3">
               <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden discover-card">
-                <div class="discover-img-wrapper"><img alt="Acer Veriton GN100 AI Mini Workstation" class="card-img-top discover-card-img" loading="lazy" src="images/Discover with acer (4).jpg"/></div>
+                <div class="discover-img-wrapper"><img alt="Acer Veriton GN100 AI Mini Workstation" class="card-img-top discover-card-img" loading="lazy" src="Images/Discover with acer (4).jpg"/>
+                </div>
                 <div class="card-body p-4 d-flex flex-column">
-                  <h3 class="card-title fw-bold discover-card-title mb-3">Acer Veriton GN100 AI Mini Workstation</h3>
-                  <p class="card-text text-muted flex-grow-1 discover-card-text">Next-level AI performance for businesses in a space-saving
-                      design...</p>
+                  <h3 class="card-title fw-bold discover-card-title mb-3">
+                      Acer Veriton GN100 AI Mini Workstation
+                    
+                  </h3>
+                  <p class="card-text text-muted flex-grow-1 discover-card-text">
+                      Next-level AI performance for businesses in a space-saving
+                      design...
+                    
+                  </p>
                   <div class="pt-3 mt-auto"><a class="discover-cta-link fw-semibold" href="https://www.acer.com/veriton" rel="noopener noreferrer" target="_blank">
                         Learn More 
-                      </a></div>
+                      </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1105,93 +1120,124 @@
       <!-- 9. BACK TO TOP SECTION -->
       <section class="acer-back-to-top-bar text-center border-top"><a class="acer-back-to-top-link d-block py-3 fw-semibold text-decoration-none" href="#top">
           Back To Top
-        </a></section>
+        </a>
+      </section>
       <!-- 13. ACER SITEMAP FOOTER -->
       <footer aria-label="Acer Site Navigation" class="acer-site-footer pt-5 pb-5">
         <div class="container">
           <div class="row g-4" id="acerFooterAccordion">
-            <div class="acer-footer-accordion-col">
-              <button aria-controls="acerFooterSection1" aria-expanded="false" class="acer-footer-toggle" data-bs-target="#acerFooterSection1" data-bs-toggle="collapse" type="button">
-                <h4 class="acer-footer-heading fw-bold mb-3 mb-0">Products</h4>
-                <i aria-hidden="true" class="bi bi-chevron-down acer-footer-toggle-icon d-lg-none"></i>
-              </button>
+            <div class="acer-footer-accordion-col"><button aria-controls="acerFooterSection1" aria-expanded="false" class="acer-footer-toggle" data-bs-target="#acerFooterSection1" data-bs-toggle="collapse" type="button">
+              <h4 class="acer-footer-heading fw-bold mb-3 mb-0">Products
+              </h4>
+<i aria-hidden="true" class="bi bi-chevron-down acer-footer-toggle-icon d-lg-none"></i></button>
               <div class="collapse acer-footer-collapse" id="acerFooterSection1">
                 <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/laptops" rel="noopener noreferrer" target="_blank">Laptops</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/desktops" rel="noopener noreferrer" target="_blank">Desktops</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/chromebooks" rel="noopener noreferrer" target="_blank">Acer Chromebooks</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/tablets" rel="noopener noreferrer" target="_blank">Tablets</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/monitors" rel="noopener noreferrer" target="_blank">Monitors</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/accessories" rel="noopener noreferrer" target="_blank">Electronics &amp; Accessories</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/networking" rel="noopener noreferrer" target="_blank">Networking</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/emobility" rel="noopener noreferrer" target="_blank">eMobility</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/gaming" rel="noopener noreferrer" target="_blank">Handheld Gaming</a></li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/laptops" rel="noopener noreferrer" target="_blank">Laptops</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/desktops" rel="noopener noreferrer" target="_blank">Desktops</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/chromebooks" rel="noopener noreferrer" target="_blank">Acer Chromebooks</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/tablets" rel="noopener noreferrer" target="_blank">Tablets</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/monitors" rel="noopener noreferrer" target="_blank">Monitors</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/accessories" rel="noopener noreferrer" target="_blank">Electronics &amp; Accessories</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/networking" rel="noopener noreferrer" target="_blank">Networking</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/emobility" rel="noopener noreferrer" target="_blank">eMobility</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/gaming" rel="noopener noreferrer" target="_blank">Handheld Gaming</a>
+                  </li>
                 </ul>
               </div>
             </div>
-            <div class="acer-footer-accordion-col">
-              <button aria-controls="acerFooterSection2" aria-expanded="false" class="acer-footer-toggle" data-bs-target="#acerFooterSection2" data-bs-toggle="collapse" type="button">
-                <h4 class="acer-footer-heading fw-bold mb-3 mb-0">Support</h4>
-                <i aria-hidden="true" class="bi bi-chevron-down acer-footer-toggle-icon d-lg-none"></i>
-              </button>
+            <div class="acer-footer-accordion-col"><button aria-controls="acerFooterSection2" aria-expanded="false" class="acer-footer-toggle" data-bs-target="#acerFooterSection2" data-bs-toggle="collapse" type="button">
+              <h4 class="acer-footer-heading fw-bold mb-3 mb-0">Support
+              </h4>
+<i aria-hidden="true" class="bi bi-chevron-down acer-footer-toggle-icon d-lg-none"></i></button>
               <div class="collapse acer-footer-collapse" id="acerFooterSection2">
                 <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
-                  <li><a class="acer-footer-nav-link" href="https://account.acer.com" rel="noopener noreferrer" target="_blank">Acer ID</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/register" rel="noopener noreferrer" target="_blank">Register a Product</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://community.acer.com" rel="noopener noreferrer" target="_blank">Acer Community</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/drivers" rel="noopener noreferrer" target="_blank">Drivers and Manuals</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://answers.acer.com" rel="noopener noreferrer" target="_blank">Acer Answers</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/contact" rel="noopener noreferrer" target="_blank">Contact Support</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/security" rel="noopener noreferrer" target="_blank">Security Advisory</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/alerts" rel="noopener noreferrer" target="_blank">Alerts &amp; Recalls</a></li>
+                  <li><a class="acer-footer-nav-link" href="https://account.acer.com" rel="noopener noreferrer" target="_blank">Acer ID</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/register" rel="noopener noreferrer" target="_blank">Register a Product</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://community.acer.com" rel="noopener noreferrer" target="_blank">Acer Community</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/drivers" rel="noopener noreferrer" target="_blank">Drivers and Manuals</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://answers.acer.com" rel="noopener noreferrer" target="_blank">Acer Answers</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/contact" rel="noopener noreferrer" target="_blank">Contact Support</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/security" rel="noopener noreferrer" target="_blank">Security Advisory</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/alerts" rel="noopener noreferrer" target="_blank">Alerts &amp; Recalls</a>
+                  </li>
                 </ul>
               </div>
             </div>
-            <div class="acer-footer-accordion-col">
-              <button aria-controls="acerFooterSection3" aria-expanded="false" class="acer-footer-toggle" data-bs-target="#acerFooterSection3" data-bs-toggle="collapse" type="button">
-                <h4 class="acer-footer-heading fw-bold mb-3 mb-0">Resources</h4>
-                <i aria-hidden="true" class="bi bi-chevron-down acer-footer-toggle-icon d-lg-none"></i>
-              </button>
+            <div class="acer-footer-accordion-col"><button aria-controls="acerFooterSection3" aria-expanded="false" class="acer-footer-toggle" data-bs-target="#acerFooterSection3" data-bs-toggle="collapse" type="button">
+              <h4 class="acer-footer-heading fw-bold mb-3 mb-0">Resources
+              </h4>
+<i aria-hidden="true" class="bi bi-chevron-down acer-footer-toggle-icon d-lg-none"></i></button>
               <div class="collapse acer-footer-collapse" id="acerFooterSection3">
                 <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
-                  <li><a class="acer-footer-nav-link" href="https://blog.acer.com" rel="noopener noreferrer" target="_blank">Acer Corner</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://account.acer.com" rel="noopener noreferrer" target="_blank">Acer Global Account Portal</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://store.acer.com" rel="noopener noreferrer" target="_blank">Online Stores</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/technologies" rel="noopener noreferrer" target="_blank">Acer Technologies</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.mcafee.com" rel="noopener noreferrer" target="_blank">McAfee</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/uc" rel="noopener noreferrer" target="_blank">Acer UC</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.smeet.com" rel="noopener noreferrer" target="_blank">sMeet</a></li>
+                  <li><a class="acer-footer-nav-link" href="https://blog.acer.com" rel="noopener noreferrer" target="_blank">Acer Corner</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://account.acer.com" rel="noopener noreferrer" target="_blank">Acer Global Account Portal</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://store.acer.com" rel="noopener noreferrer" target="_blank">Online Stores</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/technologies" rel="noopener noreferrer" target="_blank">Acer Technologies</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.mcafee.com" rel="noopener noreferrer" target="_blank">McAfee</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/uc" rel="noopener noreferrer" target="_blank">Acer UC</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.smeet.com" rel="noopener noreferrer" target="_blank">sMeet</a>
+                  </li>
                 </ul>
               </div>
             </div>
-            <div class="acer-footer-accordion-col">
-              <button aria-controls="acerFooterSection4" aria-expanded="false" class="acer-footer-toggle" data-bs-target="#acerFooterSection4" data-bs-toggle="collapse" type="button">
-                <h4 class="acer-footer-heading fw-bold mb-3 mb-0">About Acer</h4>
-                <i aria-hidden="true" class="bi bi-chevron-down acer-footer-toggle-icon d-lg-none"></i>
-              </button>
+            <div class="acer-footer-accordion-col"><button aria-controls="acerFooterSection4" aria-expanded="false" class="acer-footer-toggle" data-bs-target="#acerFooterSection4" data-bs-toggle="collapse" type="button">
+              <h4 class="acer-footer-heading fw-bold mb-3 mb-0">About Acer
+              </h4>
+<i aria-hidden="true" class="bi bi-chevron-down acer-footer-toggle-icon d-lg-none"></i></button>
               <div class="collapse acer-footer-collapse" id="acerFooterSection4">
                 <ul class="list-unstyled d-flex flex-column gap-2 mb-4">
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/about/contact" rel="noopener noreferrer" target="_blank">Contact Us</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer-group.com/investors" rel="noopener noreferrer" target="_blank">Investor Relations</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/press" rel="noopener noreferrer" target="_blank">Press</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/careers" rel="noopener noreferrer" target="_blank">Careers</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/awards" rel="noopener noreferrer" target="_blank">Awards</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/events" rel="noopener noreferrer" target="_blank">Events</a></li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/about/contact" rel="noopener noreferrer" target="_blank">Contact Us</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer-group.com/investors" rel="noopener noreferrer" target="_blank">Investor Relations</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/press" rel="noopener noreferrer" target="_blank">Press</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/careers" rel="noopener noreferrer" target="_blank">Careers</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/awards" rel="noopener noreferrer" target="_blank">Awards</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/events" rel="noopener noreferrer" target="_blank">Events</a>
+                  </li>
                 </ul>
               </div>
             </div>
-            <div class="acer-footer-accordion-col">
-              <button aria-controls="acerFooterSection5" aria-expanded="false" class="acer-footer-toggle" data-bs-target="#acerFooterSection5" data-bs-toggle="collapse" type="button">
-                <h4 class="acer-footer-heading fw-bold mb-3 mb-0">Sustainability</h4>
-                <i aria-hidden="true" class="bi bi-chevron-down acer-footer-toggle-icon d-lg-none"></i>
-              </button>
+            <div class="acer-footer-accordion-col"><button aria-controls="acerFooterSection5" aria-expanded="false" class="acer-footer-toggle" data-bs-target="#acerFooterSection5" data-bs-toggle="collapse" type="button">
+              <h4 class="acer-footer-heading fw-bold mb-3 mb-0">Sustainability
+              </h4>
+<i aria-hidden="true" class="bi bi-chevron-down acer-footer-toggle-icon d-lg-none"></i></button>
               <div class="collapse acer-footer-collapse" id="acerFooterSection5">
                 <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
-                  <li><a class="acer-footer-nav-link" href="https://www.acer-group.com/csr" rel="noopener noreferrer" target="_blank">Corporate Social Responsibility</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer-group.com/carbon" rel="noopener noreferrer" target="_blank">Product Carbon Footprint</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer-group.com/humanity" rel="noopener noreferrer" target="_blank">Project Humanity</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/earthion" rel="noopener noreferrer" target="_blank">Earthion</a></li>
-                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/recycling" rel="noopener noreferrer" target="_blank">Recycling</a></li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer-group.com/csr" rel="noopener noreferrer" target="_blank">Corporate Social Responsibility</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer-group.com/carbon" rel="noopener noreferrer" target="_blank">Product Carbon Footprint</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer-group.com/humanity" rel="noopener noreferrer" target="_blank">Project Humanity</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/earthion" rel="noopener noreferrer" target="_blank">Earthion</a>
+                  </li>
+                  <li><a class="acer-footer-nav-link" href="https://www.acer.com/recycling" rel="noopener noreferrer" target="_blank">Recycling</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -1201,52 +1247,27 @@
       <!-- 11. FOOTER  -->
       <footer class="acer-site-footer pt-5 pb-4 border-top">
         <div class="row">
-          <div class="col-12"><hr class="acer-footer-divider"/></div>
+          <div class="col-12"><hr class="acer-footer-divider"/>
+          </div>
         </div>
         <div class="container text-center">
           <!-- Social Media Icons -->
-          <div class="d-flex justify-content-center align-items-center gap-4 mb-4"><a aria-label="Facebook" class="acer-social-link" href="https://www.facebook.com/Acer" rel="noopener noreferrer" target="_blank">
-            <i class="bi bi-facebook"></i>
-            </a> <a aria-label="Instagram" class="acer-social-link" href="https://www.instagram.com/acer" rel="noopener noreferrer" target="_blank">
-            <i class="bi bi-instagram"></i>
-            </a> <a aria-label="Twitter X" class="acer-social-link" href="https://twitter.com/acer" rel="noopener noreferrer" target="_blank">
-            <i class="bi bi-twitter-x"></i>
-            </a> <a aria-label="YouTube" class="acer-social-link" href="https://www.youtube.com/user/Acer" rel="noopener noreferrer" target="_blank">
-            <i class="bi bi-youtube"></i>
-            </a></div>
+          <div class="d-flex justify-content-center align-items-center gap-4 mb-4"><a aria-label="Facebook" class="acer-social-link" href="https://www.facebook.com/Acer" rel="noopener noreferrer" target="_blank"><i class="bi bi-facebook"></i></a><a aria-label="Instagram" class="acer-social-link" href="https://www.instagram.com/acer" rel="noopener noreferrer" target="_blank"><i class="bi bi-instagram"></i></a><a aria-label="Twitter X" class="acer-social-link" href="https://twitter.com/acer" rel="noopener noreferrer" target="_blank"><i class="bi bi-twitter-x"></i></a><a aria-label="YouTube" class="acer-social-link" href="https://www.youtube.com/user/Acer" rel="noopener noreferrer" target="_blank"><i class="bi bi-youtube"></i></a>
+          </div>
           <!-- Legal Links -->
-          <div class="d-flex flex-wrap justify-content-center align-items-center mb-3"><a class="acer-bottom-legal-link" href="#" target="_blank">Privacy Policy</a> <span aria-hidden="true" class="acer-legal-separator">|</span> <a class="acer-bottom-legal-link" href="#" target="_blank">Cookie Policy</a> <span aria-hidden="true" class="acer-legal-separator">|</span> <a class="acer-bottom-legal-link" href="#" target="_blank">Legal Notice</a> <span aria-hidden="true" class="acer-legal-separator">|</span> <a class="acer-bottom-legal-link" href="#" target="_blank">Additional Legal Information</a> <span aria-hidden="true" class="acer-legal-separator">|</span> <a class="acer-bottom-legal-link" href="#" target="_blank">Accessibility Policy</a></div>
+          <div class="d-flex flex-wrap justify-content-center align-items-center mb-3"><a class="acer-bottom-legal-link" href="#" target="_blank">Privacy Policy</a><span aria-hidden="true" class="acer-legal-separator">|</span><a class="acer-bottom-legal-link" href="#" target="_blank">Cookie Policy</a><span aria-hidden="true" class="acer-legal-separator">|</span><a class="acer-bottom-legal-link" href="#" target="_blank">Legal Notice</a><span aria-hidden="true" class="acer-legal-separator">|</span><a class="acer-bottom-legal-link" href="#" target="_blank">Additional Legal Information</a><span aria-hidden="true" class="acer-legal-separator">|</span><a class="acer-bottom-legal-link" href="#" target="_blank">Accessibility Policy</a>
+          </div>
           <!-- Region Selector Link -->
-          <div class="mb-3"><a class="acer-bottom-legal-link d-inline-flex align-items-center gap-1" href="#">
-            <i class="bi bi-globe2"></i>
-            <span>United States - English</span>
-            </a>
+          <div class="mb-3"><a class="acer-bottom-legal-link d-inline-flex align-items-center gap-1" href="#"><i class="bi bi-globe2"></i><span>United States - English</span></a>
           </div>
           <!-- Copyright -->
-          <div class="acer-copyright-text">© 2026 Acer Inc.</div>
+          <div class="acer-copyright-text">
+          © 2026 Acer Inc.
+        
+          </div>
         </div>
       </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
       </script>
-      <script>
-            document.addEventListener('DOMContentLoaded', function () {
-              const menu = document.getElementById('mobileMenu');
-              if (!menu) return;
-              const pages = menu.querySelectorAll('[data-mobile-page]');
-              const showPage = name => pages.forEach(page => page.classList.toggle('is-active', page.dataset.mobilePage === name));
-              menu.querySelectorAll('[data-mobile-open]').forEach(btn => btn.addEventListener('click', () => showPage(btn.dataset.mobileOpen)));
-              menu.querySelectorAll('[data-mobile-back]').forEach(btn => btn.addEventListener('click', () => showPage(btn.dataset.mobileBack)));
-              menu.addEventListener('show.bs.offcanvas', () => syncToggler(true));
-              menu.addEventListener('hidden.bs.offcanvas', () => { showPage('main'); syncToggler(false); });
-              function syncToggler(open) {
-                document.querySelectorAll('[data-bs-target="#mobileMenu"]').forEach(t => {
-                  t.classList.toggle('collapsed', !open);
-                  t.setAttribute('aria-expanded', open ? 'true' : 'false');
-                });
-              }
-            });
-          
-      </script>
-  </body>
-</html>
-
+    </body>
+  </html>
